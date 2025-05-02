@@ -1,0 +1,35 @@
+META QUEST OCULUS NEW WAY TO TURN
+
+State of the art:
+
+To turn you have either turn yourself (physical body) or use the thumpstik or use other devices like haptics or treadmill or setup.
+
+Proposal (idea):
+
+Like in strategy games on PC, to move around a map you approach the cursor to the side or edge of the screen.
+
+Similarly to turn on VR you should just need to turn your head to your maximum left or maximum right to start the turning (90 degrees over 360 degrees).
+
+By doing this you can look around without turning but you can start turning by looking beyond 90deg.
+
+Additionally the speed of the turning can be set by how much you ‘overturn’. If you look at 95º you would start turning your avatar faster. At 100deg you would be turning at max speed.
+
+Additionally this should be able to be set up by user (90deg to 110deg) or (45deg to 90deg) or any other number from 0 to 180 or any combination. This setting depends on user comfort. Between 90deg left and 90deg right we will call this dead zone. Beyond 110deg (left or right) we’ll call this saturation.
+
+Additionally we can add acceleration between dead zone and saturation. In my opinion linearly (no acceleration) should be the default.
+
+This type of movement is going to be called ‘turning by headset’ or TBH.
+
+Additionally this can also apply on the z direction (real ground to sky). By looking up or down we can tilt the plane or drone or spaceship up or down. This should be very useful for real drone driving as it will become much easier to drive. In drone-mode or plane-mode you would use the triggers to accelerate or brake (reverse thrust). Additional movements can be performed with the thumbsticks like rotate in the Y direction (z is ground to sky).
+
+Additionally you can also rotate on Y axis (clockwise or counterclockwise) by tilting your head clockwise or counterclockwise with the same system previously described.
+
+To move around (not just turn) I suggest the use of ‘Natural Locomotion’ (on steam) as it was in my original idea to do it this way but they did it first so I suggest to merge code to get a fully immersive easy to navigate experience.
+
+implementation for turning with headset in VR © 2025 by Pol Barreio Font is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+
+implementation for turning with headset in VR by Pol Barreio Font is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 Internationalimplementation for turning with headset in VR © 2025 by Pol Barreio Font is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+
+implementation for turning with headset in VR by Pol Barreio Font is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+
+
