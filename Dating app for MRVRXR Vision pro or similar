@@ -1,0 +1,112 @@
+TÍTULO DE LA INVENCIÓN
+
+Sistema y método de interacción virtual para aplicaciones de citas mediante realidad mixta con modos de comunicación sincrónica y asincrónica. (Apple Vision pro o similares)
+
+
+---
+
+RESUMEN
+
+La invención describe un sistema de emparejamiento y comunicación interpersonal en entornos de realidad mixta (VR/AR/MR), que permite a los usuarios interactuar en dos modalidades: cara a cara en tiempo real (modo online) y a través de grabaciones personales inmersivas (modo grabación). A diferencia de las aplicaciones tradicionales de citas, esta solución emplea tecnologías de visión espacial, detección de presencia y renderizado 3D de grabaciones en primera persona para ofrecer encuentros inmersivos.
+
+
+---
+
+CAMPO DE LA INVENCIÓN
+
+La presente invención pertenece al campo de los sistemas informáticos de interacción social, más específicamente a las aplicaciones de citas que utilizan hardware de realidad mixta y tecnologías de visualización inmersiva.
+
+
+---
+
+ANTECEDENTES DE LA INVENCIÓN
+
+Las aplicaciones de citas actuales se limitan a interfaces planas y bidimensionales. Aunque algunas plataformas integran videollamadas, ninguna explota la capacidad de realidad mixta inmersiva, como las ofrecidas por Apple Vision Pro o Meta Quest, para simular encuentros cara a cara ni permite explorar grabaciones personales en entornos 3D.
+
+
+---
+
+OBJETO DE LA INVENCIÓN
+
+Proporcionar un sistema y método que:
+
+Permita interacciones en tiempo real en entornos virtuales, simulando una cita cara a cara.
+
+Ofrezca un modo asincrónico basado en grabaciones inmersivas, que permita visualizar y "sentir" la presencia del otro sin estar conectado al mismo tiempo.
+
+Utilice dispositivos de realidad mixta para lograr un alto nivel de inmersión emocional y visual.
+
+
+
+---
+
+DESCRIPCIÓN DE LA INVENCIÓN
+
+1. Modo Online (sincrónico):
+
+Si ambos usuarios están online, el sistema habilita una sala virtual común donde las personas se visualizan como hologramas o a través de su feed espacial (visión estereoscópica en vivo).
+
+Se emplea seguimiento de ojos y cuerpo para simular interacción natural.
+
+La conversación se desarrolla en un espacio virtual neutro o seleccionado (cafetería, parque, etc.).
+
+
+2. Modo Grabación (asincrónico):
+
+El usuario graba una presentación personal con las gafas de realidad mixta.
+
+El otro usuario puede acceder a estas grabaciones como si estuviera frente a la persona, en una escala real y desde una perspectiva natural (estereoscopía 3D o campo de visión completo).
+
+Se pueden dejar respuestas grabadas o transiciones al modo online si hay match.
+
+
+3. Sistema de emparejamiento:
+
+Algoritmo de compatibilidad que sugiere perfiles en base a grabaciones y actividad previa.
+
+Se integra detección de emociones en voz y gestos (opcional) para mejorar sugerencias.
+
+
+4. Elementos técnicos:
+
+Reproducción de vídeo volumétrico o espacial.
+
+Integración con sensores de presencia, movimiento y entorno de gafas XR.
+
+Motor de emparejamiento basado en actividad y expresividad.
+
+
+
+---
+
+REIVINDICACIONES
+
+1. Sistema de citas que incluye dos modos de interacción: en tiempo real mediante realidad mixta y asincrónico mediante grabaciones inmersivas.
+
+
+2. Uso de sensores XR para representar usuarios a escala real en entornos virtuales compartidos.
+
+
+3. Procedimiento para grabación de presentaciones personales en 3D mediante gafas de realidad mixta y su reproducción posterior en entornos inmersivos.
+
+
+4. Algoritmo que recomienda usuarios en base a actividad en ambos modos y a señales captadas mediante dispositivos XR.
+
+
+
+
+---
+
+DIBUJOS / FLUJOS (opcional)
+
+Puedo ayudarte a crear:
+
+Un diagrama de flujo del funcionamiento del sistema
+
+Bocetos esquemáticos de la interfaz
+
+Representación del encuentro virtual
+
+
+
+
