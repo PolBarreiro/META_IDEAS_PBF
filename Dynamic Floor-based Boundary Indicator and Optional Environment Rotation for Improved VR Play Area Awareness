@@ -1,0 +1,56 @@
+Feature Request: Dynamic Floor-based Boundary Indicator and Optional Environment Rotation for Improved VR Play Area Awareness
+
+**Detailed Description:**
+
+I propose an enhanced boundary system for the Meta Quest VR headset, designed to improve spatial awareness while maintaining immersion and preventing unintended collisions within smaller play areas. The concept introduces two main features:
+
+#### **Feature 1: Floor-based Dynamic Boundary Indicators**
+
+* **Current Behavior:** The existing vertical boundary system appears visibly around the play area, potentially breaking immersion when approached.
+* **Proposed Enhancement:** Add an optional setting to display boundary indicators primarily on the floor, appearing only when the user moves from the center toward the edges of their defined play space—not triggered by rotation alone.
+* **Implementation Details:**
+
+  * When the user is near the center, no boundary indicators appear.
+  * Upon approaching the boundary, a clear line appears on the floor at the boundary edge, accompanied by directional arrows or indicators pointing inward toward the center, clearly guiding the user back.
+  * Indicators fade or disappear entirely once the user returns closer to the center area.
+  * A configurable "dead zone" in the center allows the user to move freely without triggering any visual boundary indications.
+  * Customizable settings include color, brightness, and opacity of the floor indicators relative to the virtual environment’s brightness, ensuring visibility without overpowering the immersive experience.
+  * Crucially, this would complement—not replace—the existing boundary system, allowing users to toggle this additional feature on or off as needed.
+
+#### **Reasoning for Feature 1:**
+
+* To enable users to better perceive and remain oriented within smaller physical spaces without immersion-breaking vertical boundary barriers.
+* Provides constant spatial awareness of the real-world center of the play area (i.e., the actual room floor center), enhancing safety and confidence in smaller rooms.
+
+#### **Feature 2 (Alternative, Optional Setting): Automatic Environment Rotation**
+
+* **Proposed Alternative Enhancement:** As an optional feature, the virtual environment dynamically rotates when the user approaches a boundary edge.
+* **Implementation Details:**
+
+  * Approaching a boundary triggers a gentle rotation of the virtual environment, causing the user's original forward direction to reverse, prompting a natural physical turn by the user back towards the center of their real-world play area.
+  * This alternative is experimental and likely less comfortable or intuitive for users than Feature 1, but it could be explored as an additional configurable option for specific use cases.
+
+---
+
+**Summary of Requested Configurable Options:**
+
+* Activation/deactivation of floor-based boundary indicators.
+* Adjustable central dead-zone radius.
+* Customizable indicator colors, brightness, and opacity relative to the virtual environment.
+* Optional environment rotation triggered by proximity to boundary edges.
+
+---
+
+**Why Implement This Innovation?**
+
+* Improves immersion by minimizing intrusive vertical boundaries.
+* Clearly maintains the user's awareness of the center of their real play area, enhancing comfort and safety in limited physical spaces.
+* Provides configurable flexibility for different user preferences and spatial limitations.
+
+Thank you for considering this feature enhancement, which could significantly improve the VR experience for users playing in limited or constrained spaces.
+
+ALL MY IDEAS ARE FREE TO DEVELOP AND SHARE BUT NOT FOR SELL OR PROFIT WITHOUT CONSENT. JUST ASK ME FOR CONSENT (I'M NOT GREEDY) (A SMALL SHARE WOULD BE SATISFACTORY FOR ME)
+
+polbarreirofont@gmail.com ---- Ask anything! no wrong answers
+
+META_IDEAS_PBF by Pol Barreio Font is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
