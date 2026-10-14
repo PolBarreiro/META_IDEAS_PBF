@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-14T16:00:00+07:00",
+  "updated_at": "2026-10-14T17:03:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "hub-coordinator",
@@ -128,16 +128,18 @@
       "path": "auto-photo-stories/",
       "priority": "medium",
       "lifecycle": "prepared",
-      "status": "onboarded_documentation_only",
+      "status": "official_api_feasibility_documented_assisted_flow",
       "next_step": {
-        "action": "Create docs/FEASIBILITY.md from official Google Photos, Instagram and Android sources.",
-        "acceptance": "Matrix records capability, permission, limit, cost and manual fallback; no paid calls or deployments."
+        "action": "Create docs/PRODUCT.md for an assisted MVP: explicit selection, narrative proposal, human review and manual export first.",
+        "acceptance": "Goals, user journey, success criteria and out-of-scope automation are explicit; no connector writes or paid calls."
       },
       "owner": {
         "role": "hub-coordinator"
       },
       "blockers": [
-        "Platform capability and permission limits not yet verified"
+        "Google Photos APIs do not provide autonomous access to the user's full library",
+        "Instagram account type and publishing permissions are not verified",
+        "Memories, collages and animations have no general documented retrieval API"
       ],
       "evidence": [
         {
@@ -145,6 +147,12 @@
           "ref": "auto-photo-stories/README.md and docs/ROADMAP.md",
           "observed_at": "2026-10-14",
           "result": "created_after_source_search_found_no_existing_repository"
+        },
+        {
+          "kind": "official_documentation_review",
+          "ref": "auto-photo-stories/docs/FEASIBILITY.md",
+          "observed_at": "2026-10-14",
+          "result": "assisted flow feasible; full autonomous Google Photos selection not supported by documented APIs"
         }
       ],
       "constraints": {
@@ -207,7 +215,7 @@
   "executor_bridge": {
     "issue": "#3",
     "url": "https://github.com/PolBarreiro/META_IDEAS_PBF/issues/3",
-    "last_checked_at": "2026-10-14T16:00:00+07:00",
+    "last_checked_at": "2026-10-14T17:03:00+07:00",
     "last_comment_count": 1,
     "rule": "Only new sanitized technical evidence; local executor does not modify PR #1 in parallel.",
     "last_coordinator_instruction": "JARVIS-LOCAL-001",
