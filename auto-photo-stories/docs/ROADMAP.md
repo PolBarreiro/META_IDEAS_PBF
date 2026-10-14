@@ -15,7 +15,7 @@ Una sola unitat petita i revisable per execució. Sense desenvolupament sostingu
 
 ## Fase 1 — Producte i arquitectura
 
-- [ ] `docs/PRODUCT.md`: definir el producte inicial com a selecció consentida + proposta narrativa + revisió.
+- [x] `docs/PRODUCT.md`: MVP assistit, selecció consentida, proposta narrativa i revisió.
 - [ ] `docs/ARCHITECTURE.md`: components i flux de dades.
 - [ ] `docs/AUTOMATION.md`: selecció, esborrany, programació i notificacions.
 - [ ] `docs/SECURITY_PRIVACY.md`: permisos, credencials, fotos i retenció.
@@ -40,6 +40,10 @@ Només després de validar comptes i permisos:
 - Instagram API publica per a comptes professionals; no s'ha verificat encara el compte ni l'aprovació necessària.
 - Records, collages i animacions de Google Fotos no tenen un accés general documentat; no se'n promet automatització.
 
+## Progrés — 14-10-2026, 18:00 Asia/Bangkok
+
+Definit l'MVP local-first: selecció explícita, proposta narrativa explicable, revisió humana i exportació manual. Publicació automàtica, reconeixement de persones i accés complet a Google Fotos queden fora d'abast inicial.
+
 ## Següent pas únic
 
-Crear `docs/PRODUCT.md` amb un MVP explícitament assistit, criteris d'èxit i allò que queda fora d'abast.
+Crear `docs/ARCHITECTURE.md` amb components locals, límits de confiança i flux de dades del MVP.
