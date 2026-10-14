@@ -1,43 +1,44 @@
 # Project Hub
 
-## Principis globals
+`PROJECT_HUB_STATE.json` és la font canònica d'estat. Aquest document n'és la vista humana; els documents de projecte expliquen decisions i proves, però no repliquen l'estat operatiu.
 
-1. **NO REINVENTAR LA RODA:** cercar, provar i reutilitzar abans de construir.
-2. **AJUNTAR ABANS DE SEPARAR:** compartir infraestructura, agents i dades quan tingui sentit.
-3. **EVIDÈNCIA ABANS D'AFIRMAR:** distingir preparat, instal·lat, obert, verificat i operatiu.
-4. **UNA SOLA COORDINACIÓ:** JARVIS manté prioritats i estat; els agents especialistes són executors temporals, no coordinadors duplicats.
+## Principis
+
+1. **No reinventar la roda:** cercar, provar i reutilitzar abans de construir.
+2. **Ajuntar abans de separar:** compartir infraestructura i agents quan tingui sentit.
+3. **Evidència abans d'afirmar:** distingir preparat, instal·lat, obert, verificat i operatiu.
+4. **Una sola coordinació:** el rol `hub-coordinator` prioritza; els altres agents executen àmbits concrets.
 
 ## Responsabilitats
 
-| Agent/rol | Entorn | Responsabilitat | Estat i evidència |
+| Rol | Entorn | Responsabilitat | Evidència actual |
 |---|---|---|---|
-| JARVIS coordinador | ChatGPT/Work | Prioritat, inventari, GitHub, connectors i escalat a Pol | Actiu; manté aquesta branca i PR #1 |
-| Executor local | Acer Windows 11 / OpenClaw `pc-autonomia-stable` | Instal·lacions, shell, proves al PC i estat privat | OpenClaw 2026.8.35 present; OAuth OpenAI disponible; plugin Codex, gateway i inferència encara pendents |
-| Mark LV | Acer Windows 11 | Interfície de veu i control local | Instal·lat i interfície oberta; conversa Gemini encara no verificada |
-| Agents especialistes | Temporals | Auditoria, recerca, programació o revisió concreta | Es creen només quan aporten paral·lelisme; retornen resultats al coordinador |
+| `hub-coordinator` | ChatGPT Work | Inventari, prioritats, GitHub, connectors i escalat | Tasca JARVIS activa; PR #1 |
+| `local-pc-executor` | Acer Windows 11 / OpenClaw | Shell, instal·lacions, proves i estat privat | OpenClaw 2026.8.35; inferència encara pendent |
+| Mark LV | Acer Windows 11 | Interfície de veu i control local | Instal·lat i interfície oberta; conversa IA no verificada |
+| Agents especialistes | Temporals | Auditoria, recerca o implementació acotada | Retornen evidència al coordinador; no creen coordinació paral·lela |
 
-El coordinador cloud no assumeix accés directe al PC. L'executor local no publica credencials, correus, identificadors interns de WhatsApp ni estat privat.
+El coordinador cloud no assumeix accés directe al PC. L'executor local no publica credencials, correus, identificadors interns ni estat personal.
 
 ## Inventari viu
 
-| Projecte | Estat | Responsable principal | Següent pas | Evidència |
-|---|---|---|---|---|
-| **JARVIS al PC** | Instal·lació local comprovada; autonomia no verificada | Executor local + coordinador JARVIS | Verificar una inferència OpenClaw i una conversa Gemini; després provar una acció reversible | [Document JARVIS](Jarvis-vs-Work-Codex.md), [guia Windows](docs/jarvis/WINDOWS_INSTALL.md) |
-| **Gmail → WhatsApp** | Gmail llegible; transport persistent incomplet | Executor local | Completar enllaç persistent i verificar push/recepció abans d'activar | [Disseny](docs/jarvis/GMAIL_WHATSAPP.md) |
-| **Tasques personals JARVIS** | Backlog prioritzat | Coordinador JARVIS | Executar segons dependències, risc i cost | [Backlog](docs/jarvis/TASK_BACKLOG.md) |
-| **AutoPhoto Stories** | Bloquejat: carpeta/documentació no presents | Coordinador JARVIS | Recuperar la font autoritativa abans de crear estructura | `auto-photo-stories/README.md` absent |
-| **Quest Generative** | Base existent; desenvolupament sostingut limitat | Coordinador JARVIS | Inspecció i passos petits perquè no hi ha mesurador fiable del 25% | [README](quest-generative/README.md) |
-| **LimitlessPrinter / RobImp** | Recerca geomètrica iniciada fora d'aquest repo | Agent d'enginyeria temporal | Validar dimensions i vídeo original; integrar la idea de construcció vertical abans de separar-la | [Repo propi](https://github.com/PolBarreiro/Limitless_XYZ_3D_Printer) |
-| **Control de mosquits** | Seguiment diferit | Coordinador JARVIS | No actuar abans del 03-11-2026 09:00 Asia/Bangkok | Estat persistent a `PROJECT_HUB_STATE.json` |
+| Projecte | Prioritat | Estat | Següent pas verificable | Responsable | Evidència / restriccions |
+|---|---:|---|---|---|---|
+| **JARVIS al PC** | Màxima | Instal·lat i obert; funcionalitat no verificada | Una inferència OpenClaw i una conversa IA; després una acció reversible | `local-pc-executor` + `hub-coordinator` | [Document](Jarvis-vs-Work-Codex.md) · ús local, sense compres |
+| **Resum Gmail → WhatsApp** | Alta | Lectura cloud verificada; transport persistent local incomplet | Verificar aparellament, enviament, recepció i push des de l'agent | `local-pc-executor` | [Disseny](docs/jarvis/GMAIL_WHATSAPP.md) · dades i estat només locals |
+| **Quest Generative** | Mitjana | Base existent | Una inspecció o canvi petit | `hub-coordinator` | [README](quest-generative/README.md) · quota global no mesurable |
+| **AutoPhoto Stories** | Mitjana | No incorporat: font absent | Localitzar la font autoritativa abans de crear res | `hub-coordinator` | `auto-photo-stories/README.md` absent |
+| **LimitlessPrinter / RobImp** | Mitjana | Recerca externa | Validar la idea dins el projecte existent | Agent especialista temporal | [Repo propi](https://github.com/PolBarreiro/Limitless_XYZ_3D_Printer) |
 
 ## Escala d'estats
 
 `idea → investigat → preparat → instal·lat → obert → verificat → operatiu`
 
-No saltar estats. Una interfície oberta no prova que el model, els connectors, l'execució autònoma o les notificacions funcionin.
+No saltar estats. Una interfície oberta no prova el model, els connectors, l'execució autònoma ni les notificacions.
 
-## Comunicació
+## Privacitat, llicències i comunicació
 
-- Notificació ChatGPT: només progrés útil, bloqueig nou o intervenció imprescindible.
-- WhatsApp: només quan la connexió persistent i el destinatari estiguin verificats.
-- Repositori: només estat no sensible, decisions, evidències i següents passos.
+- El repositori és públic: cap estat de salut, finances, relacions, correus, credencials ni identificadors interns.
+- Cada projecte declara l'abast de la seva llicència; no s'estén automàticament a dependències o subprojectes.
+- ChatGPT: només progrés útil, bloqueig nou o intervenció imprescindible.
+- WhatsApp: només després de verificar connexió persistent, destinatari i recepció.
