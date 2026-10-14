@@ -16,7 +16,8 @@ Scores are estimates based only on evidence verified or explicitly bounded on 14
 | 1 | AutoPhoto Stories | 64 | Run one private, synthetic validation | Declare project licence before publishing code |
 | 2 | Jarvis local service | 58 | Keep as infrastructure and B2B candidate | Prove reversible tool use; exclude Mark LV from commercial base |
 | 3 | Pose-Independent Cloud VR | 55 | Preserve and continue only bounded tests | Validate transport/render/headset; protect enabling details |
-| 4 | LimitlessPrinter / RobImp | 35 | Hold for evidence | Real dimensions, calibrated simulation and IP/licence review |
+| 4 | Quest Link compatibility diagnosis | 51 | Validate the gap before code | Official app already tests USB and shows compatibility warnings; prove a distinct explainable gap |
+| 5 | LimitlessPrinter / RobImp | 35 | Hold for evidence | Real dimensions, calibrated simulation and IP/licence review |
 
 ## Selected experiment
 
@@ -30,3 +31,14 @@ Success criteria:
 - errors and task time are recorded anonymously.
 
 A failed result is useful: stop or redesign rather than continue by sunk cost.
+
+## Quest Link scoring note — 2026-10-15
+
+Four-agent review plus current Meta documentation produced **51/100**:
+
+- evidence confidence: 2.5/5;
+- buyer/revenue/Pol advantage: 3.4/5;
+- validation/conversion/readiness: 2.75/5;
+- feasibility, licence and IP control: 1.75/5 after existing official features were considered.
+
+Meta Horizon Link already includes a USB speed test and compatibility feedback. The opportunity advances only if a static, explainable report proves a distinct diagnostic gap. See `docs/quest-link/VALIDATION.md`. No code or outreach is authorized.
