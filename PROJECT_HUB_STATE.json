@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-14T15:47:00+07:00",
+  "updated_at": "2026-10-14T16:00:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "hub-coordinator",
@@ -152,6 +152,47 @@
         "budget": "no paid services",
         "privacy": "no photo content in repository"
       }
+    },
+    {
+      "id": "pose-independent-cloud-vr",
+      "path": "https://github.com/PolBarreiro/pose-independent-cloud-vr",
+      "priority": "high",
+      "lifecycle": "prototype",
+      "status": "snapshot_receiver_pr_open_tests_7_passed",
+      "next_step": {
+        "action": "Add a deterministic in-memory transport/scene simulation around SnapshotReceiver, without renderer, headset or paid infrastructure.",
+        "acceptance": "A moving-object sequence survives drop, stale packet and reconnect in automated tests; results state exactly what remains unverified."
+      },
+      "owner": {
+        "role": "existing-xcloudvr-executor",
+        "oversight": "hub-coordinator"
+      },
+      "blockers": [
+        "No server transport implemented",
+        "No renderer or headset path implemented",
+        "No hardware or comfort measurements"
+      ],
+      "evidence": [
+        {
+          "kind": "pull_request",
+          "ref": "PolBarreiro/pose-independent-cloud-vr#2",
+          "observed_at": "2026-10-14",
+          "result": "open; snapshot validation and reconnect recovery; 7 Node tests reported passed"
+        },
+        {
+          "kind": "branch_compare",
+          "ref": "prototype/snapshot-validation",
+          "observed_at": "2026-10-14",
+          "result": "one commit ahead; three prototype files; documentation unchanged"
+        }
+      ],
+      "constraints": {
+        "license_scope": "prototype/ code MIT; README and docs CC BY-NC-ND 4.0",
+        "budget": "no paid GPU or services",
+        "privacy": "public technical evidence only",
+        "communications": "do not repeat NVIDIA outreach without a new development",
+        "release": "do not promise releases or playable status"
+      }
     }
   ],
   "conversation_inbox": {
@@ -166,7 +207,7 @@
   "executor_bridge": {
     "issue": "#3",
     "url": "https://github.com/PolBarreiro/META_IDEAS_PBF/issues/3",
-    "last_checked_at": "2026-10-14T15:47:00+07:00",
+    "last_checked_at": "2026-10-14T16:00:00+07:00",
     "last_comment_count": 1,
     "rule": "Only new sanitized technical evidence; local executor does not modify PR #1 in parallel.",
     "last_coordinator_instruction": "JARVIS-LOCAL-001",
