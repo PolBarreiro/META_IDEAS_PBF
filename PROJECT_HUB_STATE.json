@@ -40,6 +40,12 @@
       "id": "P-003",
       "title": "Exoskeleton backpack research",
       "status": "pending_research"
+    },
+    {
+      "id": "P-004",
+      "title": "Wearable AI access and lightweight 360 capture",
+      "priority": "high",
+      "status": "research_brief_completed_purchase_comparison_pending"
     }
   ]
 }
