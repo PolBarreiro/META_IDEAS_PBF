@@ -4,7 +4,7 @@ Registra només novetats tècniques, no sensibles i accionables. `PROJECT_HUB_ST
 
 ## Punt de control
 
-- Últim context processat: **15-10-2026, 02:56 Asia/Bangkok**
+- Últim context processat: **15-10-2026, 06:01 Asia/Bangkok**
 - Abast: només context visible a l'execució; no es pressuposa accés a tot l'historial de ChatGPT.
 
 ## Elements processats
@@ -20,6 +20,8 @@ Registra només novetats tècniques, no sensibles i accionables. `PROJECT_HUB_ST
 | 15-10-2026 | Repositori / issue pública | Robot físic integrat amb assistent local | JARVIS / robòtica | Agrupar amb Jarvis; comparar comprar, reutilitzar o construir abans de despesa |
 | 15-10-2026 | Inventari del repositori | Indicadors de límit i portals passthrough | Seguretat XR | Fusionar com una família amb dues variants; matriu de confort i latència |
 | 15-10-2026 | Inventari del repositori | Diagnòstic de compatibilitat Quest Link | Eines XR | Contrastar capacitats existents i definir un informe sintètic abans de construir |
+
+| 15-10-2026 | Conversa accessible | Concepte de producte de tabac amb encesa integrada | Producte regulat / alt risc | Unificat en una família; STOP i arxiu després de prior art, seguretat, regulació i negoci; cap detall habilitant |
 
 ## Regla d'ingesta
 
