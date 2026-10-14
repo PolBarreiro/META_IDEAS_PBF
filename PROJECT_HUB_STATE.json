@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-15T06:01:00+07:00",
+  "updated_at": "2026-10-15T06:58:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "idea-monetization-coordinator",
@@ -450,6 +450,60 @@
         "commercial_5": 0.5,
         "feasibility_ip_5": 0.5,
         "gate": "Archived; professional IP/regulatory/safety evidence required to reopen."
+      }
+    },
+    {
+      "id": "xr-boundary-safety-cues",
+      "path": "docs/xr-boundary/FEASIBILITY.md",
+      "priority": "rank_5",
+      "lifecycle": "inspection",
+      "status": "official_overlap_confirmed_supplementary_cue_only",
+      "next_step": {
+        "action": "Create a static synthetic A/B/C storyboard comparing Meta default with two supplementary cues while the system boundary remains active.",
+        "acceptance": "Later, after explicit outreach authorization, at least 60% of consenting XR testers prefer a cue, notice it earlier, do not confuse it with a safety replacement, and report no added discomfort."
+      },
+      "owner": {
+        "role": "hub-coordinator",
+        "agents": [
+          "inventory",
+          "research-ip",
+          "business",
+          "commercial"
+        ]
+      },
+      "blockers": [
+        "Meta already provides a system wall/floor grid and automatic passthrough near the boundary",
+        "Legacy exact Guardian intersection and visibility functions are deprecated or non-functional on current OpenXR",
+        "No user evidence for earlier notice, comfort or willingness to pay"
+      ],
+      "evidence": [
+        {
+          "kind": "official_documentation_review",
+          "ref": "Meta Boundary, Passthrough and boundaryless safety documentation; OpenXR boundary visibility and bounds APIs",
+          "observed_at": "2026-10-15",
+          "result": "system overlap and API limits confirmed; replacement boundary rejected"
+        },
+        {
+          "kind": "four_role_rubric",
+          "ref": "OPPORTUNITY_RANKING.md",
+          "observed_at": "2026-10-15",
+          "result": "ranked_5th_46_of_100"
+        }
+      ],
+      "constraints": {
+        "budget": "no purchases or paid services",
+        "safety": "system boundary stays active; no safety claim or reliance",
+        "comfort": "no automatic view rotation",
+        "privacy": "no raw camera imagery; synthetic validation assets only",
+        "outreach": "no tester contact without explicit applicable authorization"
+      },
+      "scoring": {
+        "total_100": 46,
+        "evidence_confidence_5": 3.5,
+        "business_5": 2.5,
+        "commercial_5": 1.25,
+        "feasibility_ip_5": 2.25,
+        "gate": "Validate only a supplementary cue; stop if it creates safety reliance, confusion or discomfort."
       }
     }
   ],
