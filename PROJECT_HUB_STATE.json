@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-14T23:00:00+07:00",
+  "updated_at": "2026-10-15T02:04:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "idea-monetization-coordinator",
@@ -234,6 +234,12 @@
           "ref": "Clara private Site / autophoto.html",
           "observed_at": "2026-10-14",
           "result": "select_propose_review_export_flow_deployed_with_synthetic_assets_only"
+        },
+        {
+          "kind": "deterministic_technical_preflight",
+          "ref": "private synthetic demo source self-test",
+          "observed_at": "2026-10-15",
+          "result": "15_checks_passed; 8_unique_synthetic_assets; deterministic_7_item_story; exported_state; published_false; no_client_network_apis; purge_and_download_cleanup_present"
         }
       ],
       "constraints": {
