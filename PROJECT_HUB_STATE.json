@@ -1,11 +1,12 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-14T15:00:00+07:00",
+  "updated_at": "2026-10-14T15:47:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "hub-coordinator",
     "automation": "Jarvis",
-    "status": "active_hourly"
+    "status": "active_hourly",
+    "local_executor_heartbeat": "existing_internal_30m_subordinate"
   },
   "projects": [
     {
@@ -13,18 +14,19 @@
       "path": "Jarvis-vs-Work-Codex.md",
       "priority": "maximum",
       "lifecycle": "open",
-      "status": "installed_ui_open_functionality_unverified",
+      "status": "openclaw_gateway_inference_verified_autonomous_tool_task_pending",
       "next_step": {
-        "action": "Verify one OpenClaw inference and one AI conversation, then test one reversible local action.",
-        "acceptance": "Local executor records pass/fail evidence without secrets."
+        "action": "Complete one small reversible local task with tools and publish sanitized evidence to issue #3; verify Mark LV AI conversation separately.",
+        "acceptance": "Issue #3 records job ID, test, result, real limitation and next step; no private data. OPENCLAW_READY alone is not autonomous-tool evidence."
       },
       "owner": {
         "role": "local-pc-executor",
         "oversight": "hub-coordinator"
       },
       "blockers": [
-        "OpenClaw Codex plugin and gateway not yet verified",
-        "No successful inference recorded"
+        "Autonomous task with tools has not yet produced evidence",
+        "Mark LV AI conversation remains unverified",
+        "Persistent WhatsApp agent link remains unverified"
       ],
       "evidence": [
         {
@@ -38,12 +40,19 @@
           "ref": "#1",
           "observed_at": "2026-10-14",
           "result": "open"
+        },
+        {
+          "kind": "executor_bridge",
+          "ref": "#3",
+          "observed_at": "2026-10-14",
+          "result": "OpenClaw_2026.8.35_official_Codex_connector_gateway_health_startup_and_OPENCLAW_READY_inference_verified_no_fallback"
         }
       ],
       "constraints": {
         "license_scope": "Mark LV dependency: CC BY-NC 4.0; repository root license does not replace dependency terms",
         "budget": "no purchases or paid services",
-        "privacy": "private runtime state remains local"
+        "privacy": "private runtime state remains local",
+        "gui_control": "paused_by_user_escape; do not resume or bypass without a new local resume action"
       }
     },
     {
@@ -153,5 +162,12 @@
   "private_obligations": {
     "location": "automation/private state",
     "published_here": false
+  },
+  "executor_bridge": {
+    "issue": "#3",
+    "url": "https://github.com/PolBarreiro/META_IDEAS_PBF/issues/3",
+    "last_checked_at": "2026-10-14T15:47:00+07:00",
+    "last_comment_count": 0,
+    "rule": "Only new sanitized technical evidence; local executor does not modify PR #1 in parallel."
   }
 }
