@@ -1,48 +1,38 @@
-# JARVIS — backlog personal amb prioritat automàtica
+# JARVIS — backlog públic
 
-JARVIS ordenarà aquestes tasques quan estigui instal·lat i verificat. Cap tasca està activa encara i cap notificació de WhatsApp està configurada.
+Aquest fitxer només manté ítems no sensibles. L'estat personal, contingut de comunicacions i detalls privats viuen fora del repositori públic. `PROJECT_HUB_STATE.json` és la font canònica d'estat.
 
-## Regles de prioritat
+## Regles
 
-1. Bloquejos, seguretat i terminis.
-2. Tasques que requereixen una acció curta de Pol.
-3. Projectes personals segons utilitat, urgència, cost i dependències.
-4. No comprar, instal·lar ni enviar missatges sense els permisos i verificacions exigits per cada tasca.
+1. Primer bloquejos, seguretat i terminis.
+2. Reutilitzar abans de construir.
+3. Cap compra, missatge automàtic o acció externa sense els permisos i proves corresponents.
+4. Mark LV està instal·lat i obert, però l'executor autònom no és operatiu fins a verificar inferència i gateway.
 
-## Pendents
+## Ítems
 
 ### P-001 — Resum Gmail → WhatsApp
 
-- **Estat:** preparat documentalment; bloquejat.
-- **Objectiu:** resum diari dels correus importants al grup `Clara GPT`.
-- **Dependències:** JARVIS operatiu, OAuth Gmail de només lectura, WhatsApp i grup verificats.
+- **Estat:** preparat; desactivat.
+- **Dependències pendents:** lectura Gmail local, controlador persistent i prova d'enviament/recepció/push des de l'agent.
 - **Document:** `docs/jarvis/GMAIL_WHATSAPP.md`.
 
-### P-002 — Tinder Bio AI / Tinder AI
+### P-002 — Auditoria d'una eina personal
 
-- **Estat:** pendent d'identificar i auditar.
-- **Objectiu:** localitzar la solució existent indicada per Pol, comparar-la amb l'artefacte ja preparat i instal·lar-la al PC només si és segura i compatible.
-- **Abans d'instal·lar:** comprovar repositori exacte, llicència, manteniment, dependències, tractament de credencials i compatibilitat amb les condicions de Tinder.
-- **Límit:** cap missatge automàtic ni suplantació sense una prova controlada i revisió humana; començar en mode esborrany.
-- **Notificació:** WhatsApp només després de verificar la connexió i el grup.
+- **Estat:** pendent d'identificar i auditar en entorn privat.
+- **Límit:** no publicar l'objectiu ni dades del servei al repositori; començar sempre en mode esborrany i revisió humana.
 
-### P-003 — Motxilla amb exoesquelet per viatjar per Àsia
+### P-003 — Recerca d'equipament de viatge
 
-- **Estat:** pendent de recerca.
-- **Objectiu:** buscar productes existents, preus, pes, capacitat, ergonomia, disponibilitat a Àsia, garantia i transport.
-- **Criteri:** prioritzar solucions comercials provades o projectes reutilitzables; no comprar sense aprovació de Pol.
-- **Sortida:** comparativa curta amb millor opció i preu total.
-- **Notificació:** WhatsApp només després de verificar la connexió i el grup.
+- **Estat:** pendent de recerca acotada.
+- **Límit:** cap compra sense aprovació.
 
-### P-004 — Wearable d'IA i captura 360° lleugera
+### P-004 — Wearable d'IA i captura 360°
 
-- **Prioritat:** alta.
-- **Estat:** primera arquitectura estudiada; compra pendent.
-- **Objectiu:** accés còmode i econòmic a ChatGPT/JARVIS amb elecció de proveïdor, més un hyperlapse 360° de tot el dia.
-- **Decisió preliminar:** separar veu (mòbil + wearable) i càmera 360°.
+- **Estat:** arquitectura inicial estudiada; compra pendent.
 - **Document:** `docs/jarvis/WEARABLE_360.md`.
-- **Límit:** no comprar ni activar gravació de tercers sense revisió de privacitat i aprovació de Pol.
+- **Límit:** no comprar ni gravar tercers sense revisió de privacitat i aprovació.
 
 ## Següent pas
 
-Instal·lar i verificar JARVIS al PC. Després, resoldre P-001; P-002, P-003 i P-004 es prioritzaran automàticament segons cost, risc, dependències i utilitat.
+Verificar una inferència OpenClaw; després provar funcions reversibles de Mark LV. Continuar en paral·lel només passos documentals o de recerca independents.
