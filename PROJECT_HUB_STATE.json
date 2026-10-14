@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-15T04:00:00+07:00",
+  "updated_at": "2026-10-15T04:58:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "idea-monetization-coordinator",
@@ -332,10 +332,10 @@
       "path": "docs/quest-link/VALIDATION.md",
       "priority": "rank_4",
       "lifecycle": "inspection",
-      "status": "gap_validation_before_code",
+      "status": "synthetic_gap_matrix_complete_user_evidence_pending",
       "next_step": {
-        "action": "Create 10 synthetic compatibility cases and compare each proposed report field against Meta Horizon Link's existing cable, USB and compatibility feedback.",
-        "acceptance": "A distinct actionable gap remains in at least 3 cases; otherwise stop or reduce to a support checklist."
+        "action": "After explicit outreach authorization, test the static explainable report with 5 consenting PCVR users; do not write diagnostic code yet.",
+        "acceptance": "At least 3 have an unresolved question after the official Meta flow, the report adds a distinct actionable explanation, and at least 2 show payment or avoided-support/purchase value."
       },
       "owner": {
         "role": "hub-coordinator",
@@ -369,6 +369,12 @@
           "ref": "Meta Horizon Link developer documentation",
           "observed_at": "2026-10-15",
           "result": "built_in_USB_speed_test_and_compatibility_feedback_confirmed; generic_checker_would_duplicate_existing_features"
+        },
+        {
+          "kind": "synthetic_gap_matrix",
+          "ref": "docs/quest-link/SYNTHETIC_CASES.md",
+          "observed_at": "2026-10-15",
+          "result": "10_cases_reviewed; 1_duplicate_removed; 1_mostly_officially_covered; 8_candidate_explanatory_gaps; only_2_have_strong_documentary_support; no_code_authorized"
         }
       ],
       "constraints": {
