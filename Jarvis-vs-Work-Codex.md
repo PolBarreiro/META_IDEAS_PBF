@@ -2,12 +2,12 @@
 
 ## Decisió vigent: instal·lació al PC
 
-14 d’octubre de 2026: Pol descarta el servidor al núvol pel cost i decideix instal·lar Jarvis al seu PC. Aquesta decisió substitueix l’objectiu de desplegament al núvol indicat a les seccions històriques següents. Equip de referència: Acer Nitro V15, Windows 11. Preparar instal·lació local reutilitzant un projecte existent; el PC ha d’estar encès i connectat perquè l’assistent treballi amb API. Allotjament propi no implica gratuïtat de les API. L’automatització central s’ha actualitzat a «Jarvis al PC», mantenint la cadència de quatre hores i la pausa dels altres projectes. No hi ha instal·lació ni accés al PC verificats encara.
+14 d’octubre de 2026: Pol descarta el servidor al núvol pel cost i decideix instal·lar Jarvis al seu PC. Aquesta decisió substitueix l’objectiu de desplegament al núvol indicat a les seccions històriques següents. Equip de referència: Acer Nitro V15, Windows 11. Preparar instal·lació local reutilitzant un projecte existent; el PC ha d’estar encès i connectat perquè l’assistent treballi amb API. Allotjament propi no implica gratuïtat de les API. L’automatització JARVIS és el coordinador principal; els altres projectes estan represos. Mark LV està instal·lat al PC i la interfície s’ha obert, però la conversa Gemini i l’autonomia funcional encara no s’han verificat.
 
 
 ## Prioritat del projecte
 
-**Prioritat número 1 de Pol**, establerta el 14 d’octubre de 2026. Jarvis passa per davant dels altres projectes en la planificació del treball. Tots els altres projectes queden EN PAUSA per instrucció de Pol. L’automatització central ha estat actualitzada per treballar exclusivament en Jarvis; les altres quatre automatitzacions trobades ja estaven desactivades. Es conserva la cadència existent de quatre hores. No s’autoritzen noves despeses.
+**Prioritat número 1 de Pol**, establerta el 14 d’octubre de 2026. Jarvis passa per davant dels altres projectes en la planificació del treball. La resta de projectes estan represos i el coordinador pot avançar passos independents quan JARVIS tingui un bloqueig local. Es manté una sola coordinació principal i no s’autoritzen noves despeses.
 
 Primer resultat perseguit: instal·lar i verificar una base existent al Windows 11 de Pol. Després, integrar computer use, connectors, eines de codi i coordinació, evitant duplicacions.
 
@@ -16,13 +16,13 @@ El nostre projecte es diu **Jarvis**. La decisió vigent és instal·lar l’ass
 
 Referència general aportada per Pol: **“I build Jarvis in real life”**. És una frase recordada i una inspiració del projecte, no un títol exacte verificat ni una atribució d’autoria. Vídeo de referència: https://youtu.be/Acw0NtkyNtM.
 
-FatihMakes / Mark LV és el candidat Jarvis trobat en la recerca: https://github.com/FatihMakes/Mark-LV. Agent Zero és una alternativa de base per al desplegament al núvol: https://github.com/agent0ai/agent-zero. Encara no s’ha escollit ni instal·lat cap plataforma.
+FatihMakes / Mark LV és la base local escollida: https://github.com/FatihMakes/Mark-LV. Agent Zero continua com a alternativa/complement: https://github.com/agent0ai/agent-zero. Mark LV està instal·lat i obert; encara falta verificar conversa Gemini, persistència i accions reals.
 
 ## Comparativa: Work + Codex versus Jarvis propi
 Data: 14 d’octubre de 2026. Nota de decisió de Pol; revisió documental, sense proves d’execució.
 
 ## Objectiu
-Un assistent que coordini projectes, executi tasques amb eines i connectors, funcioni al núvol sense dependre del portàtil i seleccioni models segons la necessitat. Reutilitzar solucions existents abans de construir; integrar abans de fragmentar.
+Un assistent híbrid: coordinació i connectors cloud quan calgui, més execució local al PC encès, amb selecció d’eines i models segons la tasca. Reutilitzar solucions existents abans de construir; integrar abans de fragmentar.
 
 ## Avantatges i inconvenients
 | Opció | Avantatges | Inconvenients |
@@ -43,7 +43,7 @@ Un assistent que coordini projectes, executi tasques amb eines i connectors, fun
 ## Decisió tècnica vigent
 Usar **Mark LV com a base inicial local** per veu, pantalla i control natiu de Windows. Reservar **Agent Zero com a capa complementària posterior** per autonomia i multiagent dins Docker, connectada al host només amb permisos explícits. Evitar duplicar memòria i projectes entre sistemes.
 
-S'ha preparat una instal·lació reproduïble a `scripts/jarvis/Prepare-Jarvis.ps1` i la guia `docs/jarvis/WINDOWS_INSTALL.md`. Mark LV queda fixat al commit `c3e795af71bff38bb406c62a2e7a63869cdc8eb2`. Encara no està instal·lat ni verificat al PC real.
+S'ha preparat una instal·lació reproduïble a `scripts/jarvis/Prepare-Jarvis.ps1` i la guia `docs/jarvis/WINDOWS_INSTALL.md`. Mark LV està instal·lat sota `%USERPROFILE%\.local\share\jarvis\Mark-LV` i la interfície s'ha obert. Això acredita els estats **instal·lat** i **obert**, no encara **verificat** ni **operatiu**.
 
 ## Pendents
 1. Verificar selecció de models segons dificultat, proveïdors compatibles i costos.
@@ -61,17 +61,19 @@ S'ha preparat una instal·lació reproduïble a `scripts/jarvis/Prepare-Jarvis.p
 
 «Crear automàticament i sense preguntar-me un Jarvis en un servidor virtual. Si necessites qualsevol cosa, em pots contactar per WhatsApp o per l’aplicació de ChatGPT.»
 
-Aplicació: avançar sense preguntes rutinàries, reutilitzar una base existent, preparar i executar el desplegament amb recursos accessibles i autoritzats, comprovar resultats i registrar progrés. Contactar Pol només davant d’un bloqueig real o una intervenció obligatòria. Canal disponible configurat: notificació de ChatGPT. WhatsApp queda com a preferència alternativa pendent d’una connexió real i destinatari verificat. Estat: instrucció programada; Jarvis encara no està desplegat.
+Aplicació: avançar sense preguntes rutinàries, reutilitzar una base existent, executar proves autoritzades i registrar evidències. Contactar Pol només davant d’un bloqueig real o una intervenció obligatòria. El coordinador cloud no té accés directe al PC; l’executor local n’assumeix les proves. WhatsApp Desktop ha enviat una prova, però l’enllaç persistent, el push mòbil i la recepció per l’agent encara no estan verificats.
 
 
 ## Progrés — 14 d'octubre de 2026
 - Base escollida: Mark LV; Agent Zero queda com a integració de fase 2.
 - Preparats script d'auditoria/instal·lació/verificació i guia Windows 11 en una branca revisable.
 - Verificades les dependències upstream, Python 3.11–3.13, llicència CC BY-NC 4.0 i emmagatzematge local de la clau Gemini.
-- Bloqueig concret: manca accés al PC Windows 11 de Pol; no s'ha executat ni validat cap instal·lació.
+- Mark LV: instal·lat i interfície oberta; conversa Gemini pendent.
+- OpenClaw 2026.8.35 (`pc-autonomia-stable`): OAuth OpenAI disponible; plugin Codex, gateway i inferència pendents.
+- Distinció vigent: el coordinador cloud no controla directament el PC; l’executor local aporta proves.
 
 
 ## Requisit: resum diari Gmail → WhatsApp
 Cal revisar diàriament els missatges nous importants de Gmail i enviar un únic resum breu al grup de WhatsApp `Clara GPT`; si no n'hi ha, enviar només `Gmail revisat`. El flux no pot respondre ni modificar correus, repetir missatges, publicar estat privat ni anunciar èxit si alguna consulta o enviament falla.
 
-Disseny i condicions d'activació: `docs/jarvis/GMAIL_WHATSAPP.md`. Estat: **desactivat** fins que al PC es verifiquin OAuth Gmail de només lectura, el controlador segur de WhatsApp i la identitat exacta del grup.
+Disseny i condicions d'activació: `docs/jarvis/GMAIL_WHATSAPP.md`. Gmail és llegible i l’enviament de WhatsApp Desktop s’ha provat; el flux continua **desactivat** fins que es verifiquin l’enllaç persistent, el push mòbil, la recepció per l’agent i el destinatari en cada execució.
