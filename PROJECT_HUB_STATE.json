@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-15T02:56:00+07:00",
+  "updated_at": "2026-10-15T04:00:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "idea-monetization-coordinator",
@@ -325,6 +325,65 @@
       "previous_next_step": {
         "action": "Add a deterministic in-memory transport/scene simulation around SnapshotReceiver, without renderer, headset or paid infrastructure.",
         "acceptance": "A moving-object sequence survives drop, stale packet and reconnect in automated tests; results state exactly what remains unverified."
+      }
+    },
+    {
+      "id": "quest-link-compatibility",
+      "path": "docs/quest-link/VALIDATION.md",
+      "priority": "rank_4",
+      "lifecycle": "inspection",
+      "status": "gap_validation_before_code",
+      "next_step": {
+        "action": "Create 10 synthetic compatibility cases and compare each proposed report field against Meta Horizon Link's existing cable, USB and compatibility feedback.",
+        "acceptance": "A distinct actionable gap remains in at least 3 cases; otherwise stop or reduce to a support checklist."
+      },
+      "owner": {
+        "role": "hub-coordinator",
+        "agents": [
+          "inventory",
+          "research-ip",
+          "business",
+          "commercial"
+        ]
+      },
+      "blockers": [
+        "Meta Horizon Link already provides a USB speed test and compatibility feedback",
+        "No demand, willingness-to-pay or accuracy evidence",
+        "Compatibility data would require continuous maintenance"
+      ],
+      "evidence": [
+        {
+          "kind": "source_document",
+          "ref": "Automated Compatibility Checker for Meta Quest Link",
+          "observed_at": "2026-10-15",
+          "result": "concept_only_no_code_or_tests"
+        },
+        {
+          "kind": "four_agent_rubric",
+          "ref": "OPPORTUNITY_RANKING.md",
+          "observed_at": "2026-10-15",
+          "result": "ranked_4th_51_of_100"
+        },
+        {
+          "kind": "official_documentation_review",
+          "ref": "Meta Horizon Link developer documentation",
+          "observed_at": "2026-10-15",
+          "result": "built_in_USB_speed_test_and_compatibility_feedback_confirmed; generic_checker_would_duplicate_existing_features"
+        }
+      ],
+      "constraints": {
+        "license_scope": "original implementation requires a commercially suitable licence; repository idea text is not a commercial software licence",
+        "budget": "no purchases or paid services",
+        "privacy": "read-only local inspection; no telemetry, account login or device identifiers",
+        "outreach": "none without explicit authorization"
+      },
+      "scoring": {
+        "total_100": 51,
+        "evidence_confidence_5": 2.5,
+        "business_5": 3.4,
+        "commercial_5": 2.75,
+        "feasibility_ip_5": 1.75,
+        "gate": "Prove an explainable diagnostic gap beyond Meta Horizon Link before writing code."
       }
     }
   ],
