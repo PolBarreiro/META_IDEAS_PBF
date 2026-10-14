@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "updated_local_date": "2026-10-14",
+  "active_coordinator": "Jarvis",
+  "priorities": [
+    {
+      "project": "Jarvis",
+      "status": "blocked_waiting_for_pc_access",
+      "next_step": "Run Audit, Install and Verify on Pol's Windows 11 PC; then verify WhatsApp group before enabling Gmail summary."
+    },
+    {
+      "project": "AutoPhoto Stories",
+      "status": "blocked_missing_repository_path",
+      "next_step": "Restore or add auto-photo-stories/README.md and docs/ROADMAP.md before advancing."
+    }
+  ],
+  "scheduled_obligations": {
+    "asnef": {
+      "timezone": "Asia/Bangkok",
+      "local_time": "11:00",
+      "last_reminder_local_date": null
+    },
+    "mosquito_followup": {
+      "not_before": "2026-11-03T09:00:00+07:00",
+      "completed": false
+    }
+  }
+}
