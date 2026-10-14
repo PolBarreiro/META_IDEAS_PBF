@@ -27,7 +27,7 @@ El coordinador cloud no assumeix accés directe al PC. L'executor local no publi
 | **JARVIS al PC** | Màxima | Instal·lat i obert; funcionalitat no verificada | Una inferència OpenClaw i una conversa IA; després una acció reversible | `local-pc-executor` + `hub-coordinator` | [Document](Jarvis-vs-Work-Codex.md) · ús local, sense compres |
 | **Resum Gmail → WhatsApp** | Alta | Lectura cloud verificada; transport persistent local incomplet | Verificar aparellament, enviament, recepció i push des de l'agent | `local-pc-executor` | [Disseny](docs/jarvis/GMAIL_WHATSAPP.md) · dades i estat només locals |
 | **Quest Generative** | Mitjana | Base existent | Una inspecció o canvi petit | `hub-coordinator` | [README](quest-generative/README.md) · quota global no mesurable |
-| **AutoPhoto Stories** | Mitjana | No incorporat: font absent | Localitzar la font autoritativa abans de crear res | `hub-coordinator` | `auto-photo-stories/README.md` absent |
+| **AutoPhoto Stories** | Mitjana | Incorporació documental; sense codi | Matriu de viabilitat d'APIs oficials | `hub-coordinator` | [README](auto-photo-stories/README.md) · sense pagament ni desplegament |
 | **LimitlessPrinter / RobImp** | Mitjana | Recerca externa | Validar la idea dins el projecte existent | Agent especialista temporal | [Repo propi](https://github.com/PolBarreiro/Limitless_XYZ_3D_Printer) |
 
 ## Escala d'estats
