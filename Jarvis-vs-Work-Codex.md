@@ -1,5 +1,11 @@
 # Projecte Jarvis — computer use i cloud control
 
+## Prioritat del projecte
+
+**Prioritat número 1 de Pol**, establerta el 14 d’octubre de 2026. Jarvis passa per davant dels altres projectes en la planificació del treball. Aquesta decisió no modifica per si sola les automatitzacions existents ni autoritza noves despeses.
+
+Primer resultat perseguit: seleccionar una base existent i concretar un desplegament al núvol que no depengui del portàtil. Després, integrar computer use, connectors, eines de codi i coordinació dels altres projectes, evitant duplicacions.
+
 ## Definició acordada amb Pol
 El nostre projecte es diu **Jarvis**. La idea és instal·lar un assistent Jarvis en un cloud perquè pugui treballar sense dependre que el portàtil estigui encès, i integrar-hi control d’ordinador, connectors, eines de codi i coordinació de projectes.
 
