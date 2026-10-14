@@ -18,6 +18,7 @@ Scores are estimates based only on evidence verified or explicitly bounded on 14
 | 3 | Pose-Independent Cloud VR | 55 | Preserve and continue only bounded tests | Validate transport/render/headset; protect enabling details |
 | 4 | Quest Link compatibility diagnosis | 51 | Validate the gap before code | Official app already tests USB and shows compatibility warnings; prove a distinct explainable gap |
 | 5 | LimitlessPrinter / RobImp | 35 | Hold for evidence | Real dimensions, calibrated simulation and IP/licence review |
+| 6 | Integrated self-lighting tobacco concept | 24 | STOP / archive | Dense prior art, low customer value and prohibitive safety/regulatory exposure |
 
 ## Selected experiment
 
@@ -42,3 +43,7 @@ Four-agent review plus current Meta documentation produced **51/100**:
 - feasibility, licence and IP control: 1.75/5 after existing official features were considered.
 
 Meta Horizon Link already includes a USB speed test and compatibility feedback. The opportunity advances only if a static, explainable report proves a distinct diagnostic gap. See `docs/quest-link/VALIDATION.md`. No code or outreach is authorized.
+
+## Archived no-go — 2026-10-15
+
+The integrated self-lighting tobacco concept scored **24/100** after four-agent triage. The generic concept has decades of close patent prior art; European rules move in the opposite safety direction through reduced ignition propensity; business value is weak relative to fire, transport, toxicology and liability risk. No prototype or enabling detail is authorized. See `docs/triage/SELF_LIGHTING_TOBACCO.md`.
