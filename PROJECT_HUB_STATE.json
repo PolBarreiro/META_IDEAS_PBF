@@ -18,11 +18,28 @@
     "asnef": {
       "timezone": "Asia/Bangkok",
       "local_time": "11:00",
-      "last_reminder_local_date": null
+      "last_reminder_local_date": "2026-10-14"
     },
     "mosquito_followup": {
       "not_before": "2026-11-03T09:00:00+07:00",
       "completed": false
     }
-  }
+  },
+  "jarvis_personal_tasks": [
+    {
+      "id": "P-001",
+      "title": "Gmail to WhatsApp summary",
+      "status": "blocked_waiting_for_pc_and_whatsapp"
+    },
+    {
+      "id": "P-002",
+      "title": "Tinder Bio AI / Tinder AI",
+      "status": "pending_identification_and_audit"
+    },
+    {
+      "id": "P-003",
+      "title": "Exoskeleton backpack research",
+      "status": "pending_research"
+    }
+  ]
 }
