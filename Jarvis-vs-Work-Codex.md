@@ -9,10 +9,10 @@
 
 **Prioritat número 1 de Pol**, establerta el 14 d’octubre de 2026. Jarvis passa per davant dels altres projectes en la planificació del treball. Tots els altres projectes queden EN PAUSA per instrucció de Pol. L’automatització central ha estat actualitzada per treballar exclusivament en Jarvis; les altres quatre automatitzacions trobades ja estaven desactivades. Es conserva la cadència existent de quatre hores. No s’autoritzen noves despeses.
 
-Primer resultat perseguit: seleccionar una base existent i concretar un desplegament al núvol que no depengui del portàtil. Després, integrar computer use, connectors, eines de codi i coordinació dels altres projectes, evitant duplicacions.
+Primer resultat perseguit: instal·lar i verificar una base existent al Windows 11 de Pol. Després, integrar computer use, connectors, eines de codi i coordinació, evitant duplicacions.
 
 ## Definició acordada amb Pol
-El nostre projecte es diu **Jarvis**. La idea és instal·lar un assistent Jarvis en un cloud perquè pugui treballar sense dependre que el portàtil estigui encès, i integrar-hi control d’ordinador, connectors, eines de codi i coordinació de projectes.
+El nostre projecte es diu **Jarvis**. La decisió vigent és instal·lar l’assistent al PC de Pol; el portàtil haurà d’estar encès i connectat mentre treballi. S’hi integraran control d’ordinador, connectors, eines de codi i coordinació de projectes.
 
 Referència general aportada per Pol: **“I build Jarvis in real life”**. És una frase recordada i una inspiració del projecte, no un títol exacte verificat ni una atribució d’autoria. Vídeo de referència: https://youtu.be/Acw0NtkyNtM.
 
@@ -40,8 +40,10 @@ Un assistent que coordini projectes, executi tasques amb eines i connectors, fun
 - Codi descarregable no implica cost total zero: verificar quotes API, allotjament i llicències. No s’ha calculat un pressupost.
 - El vídeo compartit https://youtu.be/Acw0NtkyNtM no s’ha pogut identificar amb certesa; FatihMakes és un candidat, no una atribució confirmada.
 
-## Recomanació provisional
-Aprofitar Work + Codex com a base. Estudiar Agent Zero si falta un servidor propi continu o més control d’infraestructura. Considerar FatihMakes per a veu i control de l’ordinador. Evitar duplicar memòria i projectes entre sistemes: integrar només les peces que aportin valor.
+## Decisió tècnica vigent
+Usar **Mark LV com a base inicial local** per veu, pantalla i control natiu de Windows. Reservar **Agent Zero com a capa complementària posterior** per autonomia i multiagent dins Docker, connectada al host només amb permisos explícits. Evitar duplicar memòria i projectes entre sistemes.
+
+S'ha preparat una instal·lació reproduïble a `scripts/jarvis/Prepare-Jarvis.ps1` i la guia `docs/jarvis/WINDOWS_INSTALL.md`. Mark LV queda fixat al commit `c3e795af71bff38bb406c62a2e7a63869cdc8eb2`. Encara no està instal·lat ni verificat al PC real.
 
 ## Pendents
 1. Verificar selecció de models segons dificultat, proveïdors compatibles i costos.
@@ -60,3 +62,10 @@ Aprofitar Work + Codex com a base. Estudiar Agent Zero si falta un servidor prop
 «Crear automàticament i sense preguntar-me un Jarvis en un servidor virtual. Si necessites qualsevol cosa, em pots contactar per WhatsApp o per l’aplicació de ChatGPT.»
 
 Aplicació: avançar sense preguntes rutinàries, reutilitzar una base existent, preparar i executar el desplegament amb recursos accessibles i autoritzats, comprovar resultats i registrar progrés. Contactar Pol només davant d’un bloqueig real o una intervenció obligatòria. Canal disponible configurat: notificació de ChatGPT. WhatsApp queda com a preferència alternativa pendent d’una connexió real i destinatari verificat. Estat: instrucció programada; Jarvis encara no està desplegat.
+
+
+## Progrés — 14 d'octubre de 2026
+- Base escollida: Mark LV; Agent Zero queda com a integració de fase 2.
+- Preparats script d'auditoria/instal·lació/verificació i guia Windows 11 en una branca revisable.
+- Verificades les dependències upstream, Python 3.11–3.13, llicència CC BY-NC 4.0 i emmagatzematge local de la clau Gemini.
+- Bloqueig concret: manca accés al PC Windows 11 de Pol; no s'ha executat ni validat cap instal·lació.
