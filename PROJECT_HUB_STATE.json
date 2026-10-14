@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-14T18:03:00+07:00",
+  "updated_at": "2026-10-14T19:01:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "hub-coordinator",
@@ -128,10 +128,10 @@
       "path": "auto-photo-stories/",
       "priority": "medium",
       "lifecycle": "prepared",
-      "status": "assisted_local_first_mvp_defined",
+      "status": "local_first_architecture_defined",
       "next_step": {
-        "action": "Create docs/ARCHITECTURE.md for the local-first MVP with trust boundaries and data flow.",
-        "acceptance": "Components, inputs, private local state, failure boundaries and deferred social connector are explicit; no paid calls or deployment."
+        "action": "Create docs/AUTOMATION.md for assisted flows, deduplication, future scheduling and social connector activation gates.",
+        "acceptance": "No automatic publish is active; success/failure state transitions and privacy boundaries are explicit."
       },
       "owner": {
         "role": "hub-coordinator"
@@ -159,6 +159,12 @@
           "ref": "auto-photo-stories/docs/PRODUCT.md",
           "observed_at": "2026-10-14",
           "result": "assisted local-first MVP with explicit selection, human review and manual export"
+        },
+        {
+          "kind": "architecture",
+          "ref": "auto-photo-stories/docs/ARCHITECTURE.md",
+          "observed_at": "2026-10-14",
+          "result": "local-first components, trust boundaries, data flow and failure modes defined"
         }
       ],
       "constraints": {
@@ -221,7 +227,7 @@
   "executor_bridge": {
     "issue": "#3",
     "url": "https://github.com/PolBarreiro/META_IDEAS_PBF/issues/3",
-    "last_checked_at": "2026-10-14T18:03:00+07:00",
+    "last_checked_at": "2026-10-14T19:01:00+07:00",
     "last_comment_count": 1,
     "rule": "Only new sanitized technical evidence; local executor does not modify PR #1 in parallel.",
     "last_coordinator_instruction": "JARVIS-LOCAL-001",
