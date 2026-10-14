@@ -2,59 +2,49 @@
 
 ## Estat
 
-**Preparat documentalment; desactivat.** No s'ha verificat cap connexió de WhatsApp ni la identitat exacta del grup `Clara GPT`. No s'ha enviat cap missatge.
+**Preparat documentalment; desactivat.** La lectura Gmail del connector cloud s'ha verificat el 14-10-2026. A l'entorn local, WhatsApp Desktop, la conversa exacta i un enviament manual s'han comprovat; això **no** verifica l'enllaç persistent de l'agent, recepció, push ni lectura Gmail local.
 
 ## Reutilització prevista
 
-1. **Lectura Gmail:** Gmail API oficial amb OAuth i abast mínim `gmail.readonly`.
-2. **Canvis nous:** conservar localment el darrer `historyId` i usar `users.history.list`; si Gmail retorna 404 per historial caducat, fer una resincronització limitada.
-3. **Enviament:** reutilitzar `actions/send_message.py` de Mark LV només després de validar el controlador de WhatsApp i el grup.
-4. **Execució diària:** Windows Task Scheduler, amb `StartWhenAvailable` perquè s'executi quan el portàtil torni a estar disponible.
+1. **Lectura Gmail local:** Gmail API oficial amb OAuth i abast mínim `gmail.readonly`.
+2. **Canvis nous:** conservar localment el darrer `historyId` i usar `users.history.list`; si l'historial caduca, resincronització limitada.
+3. **Enviament:** reutilitzar el controlador existent de Mark LV només després de validar-lo des de l'agent.
+4. **Execució diària:** Windows Task Scheduler amb `StartWhenAvailable`.
 
 ## Flux
 
 1. Llegir només missatges nous des de l'última revisió completada.
 2. Excloure Spam, Trash, promocions i correus clarament comercials.
-3. Classificar com a important només si hi ha acció, termini, seguretat/compte, finances, viatge/reserva, salut, administració o una persona real que espera resposta.
+3. Classificar com a important només si hi ha acció, termini, seguretat/compte, finances, viatge, salut, administració o una persona que espera resposta.
 4. Crear un únic resum breu en català: remitent, assumpte, acció i termini.
 5. Si no hi ha res important, preparar exactament `Gmail revisat`.
-6. Abans d'enviar, resoldre el grup per nom i verificar que la conversa oberta mostra exactament `Clara GPT`.
-7. Considerar èxit només si el controlador confirma l'enviament. Actualitzar l'estat després de l'èxit; si falla, conservar els missatges pendents per evitar pèrdues.
+6. Verificar la conversa exacta abans d'enviar.
+7. Actualitzar l'estat privat només després de confirmació d'enviament.
 
 ## Estat privat local
 
-Guardar fora del repositori, per exemple a:
+Desar fora del repositori: darrer `historyId`, darrera revisió correcta, hashes de missatges ja resumits, darrer enviament i versió d'esquema. No publicar contingut, tokens, identificadors del grup ni captures.
 
-`%LOCALAPPDATA%\PolJarvis\private\gmail-whatsapp-state.json`
+## Condicions abans d'activar
 
-Camps mínims:
+- [x] Mark LV instal·lat i interfície oberta.
+- [x] Lectura Gmail cloud verificada (no equival a OAuth local).
+- [x] WhatsApp Desktop amb la sessió correcta.
+- [x] Conversa exacta resolta i prova manual visual.
+- [ ] OAuth Gmail local de només lectura verificat.
+- [ ] Controlador persistent importable i provat des de l'agent.
+- [ ] Aparellament/QR persistent verificat.
+- [ ] Enviament, recepció i push verificats de punta a punta.
+- [ ] Tasca diària registrada després de superar les proves.
 
-- `last_history_id`
-- `last_successful_check_at`
-- hashes dels missatges ja resumits
-- `last_whatsapp_send_at`
-- versió de l'esquema
+## Fallada segura
 
-No guardar al repositori contingut dels correus, tokens OAuth, identificadors interns del grup ni captures.
-
-## Condicions obligatòries abans d'activar
-
-- [ ] Mark LV instal·lat i verificat al PC de Pol.
-- [ ] OAuth Gmail de només lectura verificat per a `polbarreirofont@gmail.com`.
-- [ ] WhatsApp Desktop iniciat amb la sessió correcta.
-- [ ] Controlador `plugins/_whatsapp_core.py` present i provat; al commit fixat el codi l'importa, però no apareix al repositori consultat.
-- [ ] Grup `Clara GPT` resolt de manera inequívoca.
-- [ ] Prova manual amb un text innocu i confirmació visual.
-- [ ] Tasca diària registrada només després de superar les proves.
-
-## Política de fallada segura
-
-- No usar la ruta de tecleig «a cegues» de Mark LV per a aquest flux.
-- No dir `Gmail revisat` si la lectura ha fallat.
-- No avançar el marcador de Gmail si WhatsApp no confirma l'enviament.
-- No respondre, esborrar, arxivar ni modificar cap correu.
-- No substituir WhatsApp per un altre canal sense instrucció explícita de Pol.
+- No usar tecleig a cegues.
+- No dir `Gmail revisat` si la lectura falla.
+- No avançar el marcador de Gmail si l'enviament no es confirma.
+- No respondre, esborrar, arxivar ni modificar correus.
+- No substituir WhatsApp per un altre canal sense instrucció explícita.
 
 ## Següent pas
 
-Quan hi hagi accés al PC: executar l'auditoria de JARVIS, comprovar si el controlador verificat de WhatsApp existeix realment a la instal·lació i fer una prova manual del grup abans d'escriure l'adaptador diari.
+Verificar aparellament persistent/QR i un cicle d'enviament-recepció des de l'agent; després verificar lectura Gmail local i implementar l'adaptador.
