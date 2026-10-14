@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-14T17:03:00+07:00",
+  "updated_at": "2026-10-14T18:03:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "hub-coordinator",
@@ -128,10 +128,10 @@
       "path": "auto-photo-stories/",
       "priority": "medium",
       "lifecycle": "prepared",
-      "status": "official_api_feasibility_documented_assisted_flow",
+      "status": "assisted_local_first_mvp_defined",
       "next_step": {
-        "action": "Create docs/PRODUCT.md for an assisted MVP: explicit selection, narrative proposal, human review and manual export first.",
-        "acceptance": "Goals, user journey, success criteria and out-of-scope automation are explicit; no connector writes or paid calls."
+        "action": "Create docs/ARCHITECTURE.md for the local-first MVP with trust boundaries and data flow.",
+        "acceptance": "Components, inputs, private local state, failure boundaries and deferred social connector are explicit; no paid calls or deployment."
       },
       "owner": {
         "role": "hub-coordinator"
@@ -153,6 +153,12 @@
           "ref": "auto-photo-stories/docs/FEASIBILITY.md",
           "observed_at": "2026-10-14",
           "result": "assisted flow feasible; full autonomous Google Photos selection not supported by documented APIs"
+        },
+        {
+          "kind": "product_definition",
+          "ref": "auto-photo-stories/docs/PRODUCT.md",
+          "observed_at": "2026-10-14",
+          "result": "assisted local-first MVP with explicit selection, human review and manual export"
         }
       ],
       "constraints": {
@@ -215,7 +221,7 @@
   "executor_bridge": {
     "issue": "#3",
     "url": "https://github.com/PolBarreiro/META_IDEAS_PBF/issues/3",
-    "last_checked_at": "2026-10-14T17:03:00+07:00",
+    "last_checked_at": "2026-10-14T18:03:00+07:00",
     "last_comment_count": 1,
     "rule": "Only new sanitized technical evidence; local executor does not modify PR #1 in parallel.",
     "last_coordinator_instruction": "JARVIS-LOCAL-001",
