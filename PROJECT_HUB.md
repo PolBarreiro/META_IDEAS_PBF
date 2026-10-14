@@ -29,6 +29,7 @@ El coordinador cloud no assumeix accés directe al PC. L'executor local retorna 
 | **Quest Generative** | Mitjana | Base existent | Una inspecció o canvi petit | `hub-coordinator` | [README](quest-generative/README.md) · quota global no mesurable |
 | **AutoPhoto Stories** | Mitjana | Incorporació documental; sense codi | Matriu de viabilitat d'APIs oficials | `hub-coordinator` | [README](auto-photo-stories/README.md) · sense pagament ni desplegament |
 | **LimitlessPrinter / RobImp** | Mitjana | Recerca externa | Validar la idea dins el projecte existent | Agent especialista temporal | [Repo propi](https://github.com/PolBarreiro/Limitless_XYZ_3D_Printer) |
+| **Pose-Independent Cloud VR / XcloudVR** | Alta | PR de receptor de snapshots oberta; 7 proves passades | Simulació determinista transport/escena en memòria | Executor XcloudVR existent + `hub-coordinator` | [PR #2](https://github.com/PolBarreiro/pose-independent-cloud-vr/pull/2) · codi MIT; docs protegits; sense GPU de pagament |
 
 ## Escala d'estats
 
@@ -40,6 +41,7 @@ No saltar estats. Una interfície oberta no prova el model, els connectors, l'ex
 
 - El repositori és públic: cap estat de salut, finances, relacions, correus, credencials ni identificadors interns.
 - Cada projecte declara l'abast de la seva llicència; no s'estén automàticament a dependències o subprojectes.
+- XcloudVR: cap GPU/servei de pagament, cap insistència a NVIDIA sense novetat i cap promesa de release.
 - ChatGPT: només progrés útil, bloqueig nou o intervenció imprescindible.
 - WhatsApp: només després de verificar connexió persistent, destinatari i recepció.
 - GUI local: una aturada amb Escape és vinculant; no reprendre ni esquivar-la sense una nova acció local.
