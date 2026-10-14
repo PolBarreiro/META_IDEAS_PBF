@@ -1,4 +1,13 @@
-# Comparativa: Work + Codex versus Jarvis propi
+# Projecte Jarvis — computer use i cloud control
+
+## Definició acordada amb Pol
+El nostre projecte es diu **Jarvis**. La idea és instal·lar un assistent Jarvis en un cloud perquè pugui treballar sense dependre que el portàtil estigui encès, i integrar-hi control d’ordinador, connectors, eines de codi i coordinació de projectes.
+
+Referència general aportada per Pol: **“I build Jarvis in real life”**. És una frase recordada i una inspiració del projecte, no un títol exacte verificat ni una atribució d’autoria. Vídeo de referència: https://youtu.be/Acw0NtkyNtM.
+
+FatihMakes / Mark LV és el candidat Jarvis trobat en la recerca: https://github.com/FatihMakes/Mark-LV. Agent Zero és una alternativa de base per al desplegament al núvol: https://github.com/agent0ai/agent-zero. Encara no s’ha escollit ni instal·lat cap plataforma.
+
+## Comparativa: Work + Codex versus Jarvis propi
 Data: 14 d’octubre de 2026. Nota de decisió de Pol; revisió documental, sense proves d’execució.
 
 ## Objectiu
