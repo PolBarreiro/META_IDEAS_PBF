@@ -2,7 +2,7 @@
 
 ## Prioritat del projecte
 
-**Prioritat número 1 de Pol**, establerta el 14 d’octubre de 2026. Jarvis passa per davant dels altres projectes en la planificació del treball. Aquesta decisió no modifica per si sola les automatitzacions existents ni autoritza noves despeses.
+**Prioritat número 1 de Pol**, establerta el 14 d’octubre de 2026. Jarvis passa per davant dels altres projectes en la planificació del treball. Tots els altres projectes queden EN PAUSA per instrucció de Pol. L’automatització central ha estat actualitzada per treballar exclusivament en Jarvis; les altres quatre automatitzacions trobades ja estaven desactivades. Es conserva la cadència existent de quatre hores. No s’autoritzen noves despeses.
 
 Primer resultat perseguit: seleccionar una base existent i concretar un desplegament al núvol que no depengui del portàtil. Després, integrar computer use, connectors, eines de codi i coordinació dels altres projectes, evitant duplicacions.
 
@@ -42,10 +42,16 @@ Aprofitar Work + Codex com a base. Estudiar Agent Zero si falta un servidor prop
 1. Verificar selecció de models segons dificultat, proveïdors compatibles i costos.
 2. Comparar una mateixa tasca real: recerca, modificació de codi, execució i verificació.
 3. Comprovar persistència, recuperació d’errors i funcionament amb el portàtil apagat.
-4. Decidir després si convé integrar una peça externa; aquesta nota no autoritza desplegaments ni despeses.
+4. Executar el desplegament autoritzat quan hi hagi recursos i accessos reals; no contractar serveis ni assumir despeses sense pressupost.
 
 ## Fonts primàries consultades
 - Work: https://learn.chatgpt.com/docs/get-started-with-work
 - FatihMakes: https://github.com/FatihMakes/Mark-LV
 - Agent Zero: https://github.com/agent0ai/agent-zero
 - Microsoft JARVIS: https://github.com/microsoft/JARVIS
+
+## Instrucció d’execució autònoma de Pol
+
+«Crear automàticament i sense preguntar-me un Jarvis en un servidor virtual. Si necessites qualsevol cosa, em pots contactar per WhatsApp o per l’aplicació de ChatGPT.»
+
+Aplicació: avançar sense preguntes rutinàries, reutilitzar una base existent, preparar i executar el desplegament amb recursos accessibles i autoritzats, comprovar resultats i registrar progrés. Contactar Pol només davant d’un bloqueig real o una intervenció obligatòria. Canal disponible configurat: notificació de ChatGPT. WhatsApp queda com a preferència alternativa pendent d’una connexió real i destinatari verificat. Estat: instrucció programada; Jarvis encara no està desplegat.
