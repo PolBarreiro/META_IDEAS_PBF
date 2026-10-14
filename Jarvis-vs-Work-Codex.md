@@ -1,5 +1,10 @@
 # Projecte Jarvis — computer use i cloud control
 
+## Decisió vigent: instal·lació al PC
+
+14 d’octubre de 2026: Pol descarta el servidor al núvol pel cost i decideix instal·lar Jarvis al seu PC. Aquesta decisió substitueix l’objectiu de desplegament al núvol indicat a les seccions històriques següents. Equip de referència: Acer Nitro V15, Windows 11. Preparar instal·lació local reutilitzant un projecte existent; el PC ha d’estar encès i connectat perquè l’assistent treballi amb API. Allotjament propi no implica gratuïtat de les API. L’automatització central s’ha actualitzat a «Jarvis al PC», mantenint la cadència de quatre hores i la pausa dels altres projectes. No hi ha instal·lació ni accés al PC verificats encara.
+
+
 ## Prioritat del projecte
 
 **Prioritat número 1 de Pol**, establerta el 14 d’octubre de 2026. Jarvis passa per davant dels altres projectes en la planificació del treball. Tots els altres projectes queden EN PAUSA per instrucció de Pol. L’automatització central ha estat actualitzada per treballar exclusivament en Jarvis; les altres quatre automatitzacions trobades ja estaven desactivades. Es conserva la cadència existent de quatre hores. No s’autoritzen noves despeses.
