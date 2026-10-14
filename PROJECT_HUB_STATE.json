@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-15T04:58:00+07:00",
+  "updated_at": "2026-10-15T06:01:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "idea-monetization-coordinator",
@@ -391,10 +391,70 @@
         "feasibility_ip_5": 1.75,
         "gate": "Prove an explainable diagnostic gap beyond Meta Horizon Link before writing code."
       }
+    },
+    {
+      "id": "integrated-self-lighting-tobacco",
+      "path": "docs/triage/SELF_LIGHTING_TOBACCO.md",
+      "priority": "rank_6",
+      "lifecycle": "archived",
+      "status": "stop_after_prior_art_safety_regulatory_business_triage",
+      "next_step": {
+        "action": "No action. Revisit only with a distinct non-obvious safety architecture plus professional IP, regulatory, transport and insurability evidence.",
+        "acceptance": "All five revisit gates in the triage document pass before any prototype or outreach."
+      },
+      "owner": {
+        "role": "hub-coordinator",
+        "agents": [
+          "inventory",
+          "research-ip",
+          "business",
+          "commercial"
+        ]
+      },
+      "blockers": [
+        "Dense published prior art covering multiple self-lighting approaches",
+        "Severe fire, burn, transport, toxicology and product-liability exposure",
+        "EU reduced-ignition-propensity and tobacco-product requirements",
+        "No demand, prototype or defensible architecture"
+      ],
+      "evidence": [
+        {
+          "kind": "four_agent_rubric",
+          "ref": "docs/triage/SELF_LIGHTING_TOBACCO.md",
+          "observed_at": "2026-10-15",
+          "result": "ranked_6th_24_of_100_STOP_archive"
+        },
+        {
+          "kind": "patent_review",
+          "ref": "public patent records including US3994305A, US8215317B2 and WO2012123679A1",
+          "observed_at": "2026-10-15",
+          "result": "generic_concept_not_novel; freedom_to_operate_unresolved"
+        },
+        {
+          "kind": "regulatory_review",
+          "ref": "EU 2008/264/EC and tobacco product regulation",
+          "observed_at": "2026-10-15",
+          "result": "reduced_ignition_propensity_and_product_reporting_requirements_create_strong_adverse_gate"
+        }
+      ],
+      "constraints": {
+        "safety": "No chemistry, reactive materials, ignition tests or physical prototype",
+        "ip": "Do not publish enabling detail; broad novelty appears absent",
+        "budget": "No purchase, laboratory work or paid filing",
+        "outreach": "No manufacturer, consumer or investor contact"
+      },
+      "scoring": {
+        "total_100": 24,
+        "evidence_confidence_5": 4,
+        "business_5": 0.5,
+        "commercial_5": 0.5,
+        "feasibility_ip_5": 0.5,
+        "gate": "Archived; professional IP/regulatory/safety evidence required to reopen."
+      }
     }
   ],
   "conversation_inbox": {
-    "last_processed_at": "2026-10-15T02:56:00+07:00",
+    "last_processed_at": "2026-10-15T06:01:00+07:00",
     "scope": "visible_context_only",
     "document": "PROJECT_INBOX.md"
   },
