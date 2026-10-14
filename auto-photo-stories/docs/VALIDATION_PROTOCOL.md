@@ -90,3 +90,9 @@ Stated intent is not a sale. Real demand requires later evidence of repeated use
 ## Retention and purge
 
 Retain only aggregate results, synthetic IDs, dataset seed/version, synthetic hashes and pass/fail. Temporary drafts and manifests are deleted after each session; verify the session is clean before the next participant.
+
+## Technical preflight — 2026-10-15
+
+**PASS (15 deterministic checks).** The private demo source produced a seven-item story from eight unique synthetic assets, exported a manifest with sequential ordering, retained `published: false`, declared no client network APIs, and included purge plus download cleanup paths.
+
+An isolated browser could not perform visual UI QA because the private Site correctly required its owner session. This is not a product failure and does not count as human validation. Round 1 with 3–5 consenting participants remains the next gate.
