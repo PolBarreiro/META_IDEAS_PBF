@@ -1,23 +1,62 @@
 {
-  "schema_version": 3,
-  "updated_at": "2026-10-14T19:01:00+07:00",
+  "schema_version": 4,
+  "updated_at": "2026-10-14T20:00:00+07:00",
   "canonical": true,
   "coordinator": {
-    "role": "hub-coordinator",
-    "automation": "Jarvis",
-    "status": "active_hourly",
-    "local_executor_heartbeat": "existing_internal_30m_subordinate"
+    "role": "idea-monetization-coordinator",
+    "automation": "Clara — Motor d’Idees",
+    "status": "active_hourly_single_coordinator",
+    "canonical_mission": "CORE_MISSION.md"
   },
   "projects": [
     {
+      "id": "idea-monetization-engine",
+      "path": "CORE_MISSION.md",
+      "priority": "maximum",
+      "lifecycle": "active",
+      "status": "canonical_mission_active",
+      "next_step": {
+        "action": "Build a private, deduplicated inventory from accessible conversation sources and rank the first three opportunities.",
+        "acceptance": "Each opportunity has evidence, revenue path, IP/privacy risk, owner and one low-cost validation step."
+      },
+      "owner": {
+        "role": "Clara",
+        "agents": [
+          "inventory",
+          "research-ip",
+          "business",
+          "commercial"
+        ]
+      },
+      "blockers": [
+        "Complete ChatGPT history is not directly accessible in every run",
+        "Gemini, Grok and Claude ingestion requires a verified connector or authorized export",
+        "Subagent capacity may be temporarily unavailable"
+      ],
+      "evidence": [
+        {
+          "kind": "automation_update",
+          "ref": "Clara — Motor d’Idees",
+          "observed_at": "2026-10-14",
+          "result": "single active mother task rewritten around idea monetization"
+        }
+      ],
+      "constraints": {
+        "privacy": "conversation corpus and personal data remain private",
+        "budget": "no purchases or paid services without explicit authorization",
+        "ip": "do not publish enabling details before protection review",
+        "outreach": "prepare freely; send or commit only with explicit applicable authorization"
+      }
+    },
+    {
       "id": "jarvis",
       "path": "Jarvis-vs-Work-Codex.md",
-      "priority": "maximum",
-      "lifecycle": "open",
-      "status": "openclaw_gateway_inference_verified_autonomous_tool_task_pending",
+      "priority": "unranked",
+      "lifecycle": "paused",
+      "status": "paused_pending_monetization_scoring",
       "next_step": {
-        "action": "Complete one small reversible local task with tools and publish sanitized evidence to issue #3; verify Mark LV AI conversation separately.",
-        "acceptance": "Issue #3 records job ID, test, result, real limitation and next step; no private data. OPENCLAW_READY alone is not autonomous-tool evidence."
+        "action": "Score this preserved project against the canonical monetization criteria before any reactivation.",
+        "acceptance": "Evidence-backed score, realistic revenue path, IP risk and one low-cost validation step are recorded."
       },
       "owner": {
         "role": "local-pc-executor",
@@ -53,17 +92,23 @@
         "budget": "no purchases or paid services",
         "privacy": "private runtime state remains local",
         "gui_control": "paused_by_user_escape; do not resume or bypass without a new local resume action"
+      },
+      "previous_lifecycle": "open",
+      "previous_status": "openclaw_gateway_inference_verified_autonomous_tool_task_pending",
+      "previous_next_step": {
+        "action": "Complete one small reversible local task with tools and publish sanitized evidence to issue #3; verify Mark LV AI conversation separately.",
+        "acceptance": "Issue #3 records job ID, test, result, real limitation and next step; no private data. OPENCLAW_READY alone is not autonomous-tool evidence."
       }
     },
     {
       "id": "gmail-whatsapp-summary",
       "path": "docs/jarvis/GMAIL_WHATSAPP.md",
-      "priority": "high",
-      "lifecycle": "prepared",
-      "status": "cloud_read_verified_persistent_local_transport_unverified",
+      "priority": "unranked",
+      "lifecycle": "paused",
+      "status": "paused_pending_monetization_scoring",
       "next_step": {
-        "action": "Verify persistent agent pairing plus send, receive and push before enabling.",
-        "acceptance": "Round-trip evidence from the local agent; no repository identifiers or message content."
+        "action": "Score this preserved project against the canonical monetization criteria before any reactivation.",
+        "acceptance": "Evidence-backed score, realistic revenue path, IP risk and one low-cost validation step are recorded."
       },
       "owner": {
         "role": "local-pc-executor",
@@ -91,17 +136,23 @@
         "license_scope": "project code license to be declared before implementation",
         "budget": "no purchases or paid services",
         "privacy": "email content, recipient identifiers and checkpoints remain local"
+      },
+      "previous_lifecycle": "prepared",
+      "previous_status": "cloud_read_verified_persistent_local_transport_unverified",
+      "previous_next_step": {
+        "action": "Verify persistent agent pairing plus send, receive and push before enabling.",
+        "acceptance": "Round-trip evidence from the local agent; no repository identifiers or message content."
       }
     },
     {
       "id": "quest-generative",
       "path": "quest-generative/",
-      "priority": "medium",
-      "lifecycle": "investigated",
-      "status": "existing_base_small_steps_only",
+      "priority": "unranked",
+      "lifecycle": "paused",
+      "status": "paused_pending_monetization_scoring",
       "next_step": {
-        "action": "Perform one bounded inspection or reviewable change.",
-        "acceptance": "No sustained development without a reliable quota meter."
+        "action": "Score this preserved project against the canonical monetization criteria before any reactivation.",
+        "acceptance": "Evidence-backed score, realistic revenue path, IP risk and one low-cost validation step are recorded."
       },
       "owner": {
         "role": "hub-coordinator"
@@ -121,17 +172,23 @@
         "license_scope": "MIT within quest-generative/",
         "budget": "small free steps only",
         "privacy": "public documentation only"
+      },
+      "previous_lifecycle": "investigated",
+      "previous_status": "existing_base_small_steps_only",
+      "previous_next_step": {
+        "action": "Perform one bounded inspection or reviewable change.",
+        "acceptance": "No sustained development without a reliable quota meter."
       }
     },
     {
       "id": "auto-photo-stories",
       "path": "auto-photo-stories/",
-      "priority": "medium",
-      "lifecycle": "prepared",
-      "status": "local_first_architecture_defined",
+      "priority": "unranked",
+      "lifecycle": "paused",
+      "status": "paused_pending_monetization_scoring",
       "next_step": {
-        "action": "Create docs/AUTOMATION.md for assisted flows, deduplication, future scheduling and social connector activation gates.",
-        "acceptance": "No automatic publish is active; success/failure state transitions and privacy boundaries are explicit."
+        "action": "Score this preserved project against the canonical monetization criteria before any reactivation.",
+        "acceptance": "Evidence-backed score, realistic revenue path, IP risk and one low-cost validation step are recorded."
       },
       "owner": {
         "role": "hub-coordinator"
@@ -171,17 +228,23 @@
         "license_scope": "undetermined; documentation only",
         "budget": "no paid services",
         "privacy": "no photo content in repository"
+      },
+      "previous_lifecycle": "prepared",
+      "previous_status": "local_first_architecture_defined",
+      "previous_next_step": {
+        "action": "Create docs/AUTOMATION.md for assisted flows, deduplication, future scheduling and social connector activation gates.",
+        "acceptance": "No automatic publish is active; success/failure state transitions and privacy boundaries are explicit."
       }
     },
     {
       "id": "pose-independent-cloud-vr",
       "path": "https://github.com/PolBarreiro/pose-independent-cloud-vr",
-      "priority": "high",
-      "lifecycle": "prototype",
-      "status": "snapshot_receiver_pr_open_tests_7_passed",
+      "priority": "unranked",
+      "lifecycle": "paused",
+      "status": "paused_pending_monetization_scoring",
       "next_step": {
-        "action": "Add a deterministic in-memory transport/scene simulation around SnapshotReceiver, without renderer, headset or paid infrastructure.",
-        "acceptance": "A moving-object sequence survives drop, stale packet and reconnect in automated tests; results state exactly what remains unverified."
+        "action": "Score this preserved project against the canonical monetization criteria before any reactivation.",
+        "acceptance": "Evidence-backed score, realistic revenue path, IP risk and one low-cost validation step are recorded."
       },
       "owner": {
         "role": "existing-xcloudvr-executor",
@@ -212,6 +275,12 @@
         "privacy": "public technical evidence only",
         "communications": "do not repeat NVIDIA outreach without a new development",
         "release": "do not promise releases or playable status"
+      },
+      "previous_lifecycle": "prototype",
+      "previous_status": "snapshot_receiver_pr_open_tests_7_passed",
+      "previous_next_step": {
+        "action": "Add a deterministic in-memory transport/scene simulation around SnapshotReceiver, without renderer, headset or paid infrastructure.",
+        "acceptance": "A moving-object sequence survives drop, stale packet and reconnect in automated tests; results state exactly what remains unverified."
       }
     }
   ],
@@ -231,6 +300,13 @@
     "last_comment_count": 1,
     "rule": "Only new sanitized technical evidence; local executor does not modify PR #1 in parallel.",
     "last_coordinator_instruction": "JARVIS-LOCAL-001",
-    "awaiting_executor_evidence": true
+    "awaiting_executor_evidence": false,
+    "status": "paused_by_core_mission_reprioritization"
+  },
+  "portfolio_policy": {
+    "active_project": "idea-monetization-engine",
+    "all_previous_projects": "preserved_and_paused_pending_scoring",
+    "reactivation_rule": "Only when evidence-backed monetization scoring justifies it.",
+    "deletion_policy": "Do not delete prior work; archive and retain provenance."
   }
 }
