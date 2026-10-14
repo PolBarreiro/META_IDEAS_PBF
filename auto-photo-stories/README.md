@@ -1,27 +1,28 @@
 # AutoPhoto Stories
 
-Projecte per preparar relats visuals a partir de fotos pròpies i publicar-los de manera controlada, amb una futura app Android.
+Projecte local-first per convertir una selecció consentida de fotos en una història visual revisable i exportable, sense publicació automàtica.
 
 ## Estat
 
-**Incorporació documental inicial.** El 14-10-2026 no s'ha trobat cap repositori o font prèvia d'AutoPhoto Stories entre els repositoris GitHub accessibles de Pol. No hi ha codi, desplegament ni integracions actives.
+**Validació privada amb dades sintètiques.** La viabilitat, l’MVP i l’arquitectura estan definits. Existeix una demo privada del flux seleccionar → proposar → revisar → exportar. No hi ha integracions actives, comptes connectats ni codi d’app publicat.
 
 ## Principis
 
-- Reutilitzar eines i APIs oficials abans de construir components.
-- Començar en mode proposta/esborrany; publicació automàtica només després de permisos i proves.
-- No pujar fotos, credencials, tokens ni dades personals al repositori.
-- Cap servei de pagament ni desenvolupament sostingut sense límit de consum verificable.
-- Canvis petits, reversibles i revisables.
-
-## Objectiu inicial
-
-Validar, sense despesa, quines parts són tècnicament possibles amb Google Fotos, Instagram i Android abans de decidir arquitectura.
+- Reutilitzar selectors i APIs oficials abans de construir.
+- Processament local i revisió humana.
+- Cap foto, credencial, token o dada personal al repositori.
+- Cap publicació automàtica.
+- Cap servei de pagament.
+- Declarar la llicència del subprojecte abans de publicar codi.
 
 ## Documentació
 
+- [Producte](docs/PRODUCT.md)
+- [Viabilitat](docs/FEASIBILITY.md)
+- [Arquitectura](docs/ARCHITECTURE.md)
+- [Protocol de validació](docs/VALIDATION_PROTOCOL.md)
 - [Roadmap](docs/ROADMAP.md)
 
 ## Següent pas
 
-Crear una matriu de viabilitat basada en documentació oficial: lectura/selecció de fotos, accés a creacions, esborrany/publicació d'Instagram, autenticació i límits.
+Fer 3–5 sessions consentides amb la demo sintètica segons el protocol. No contactar participants ni compartir accés sense autorització aplicable.
