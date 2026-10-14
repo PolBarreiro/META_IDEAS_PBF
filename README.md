@@ -11,3 +11,7 @@ polbarreirofont@gmail.com ---- Ask anything! no wrong answers
 
 Consulta [el README del joc](quest-generative/README.md) per a l'arquitectura, el pla i com col·laborar. El material nou de quest-generative/ té llicència MIT pròpia; les idees anteriors mantenen les condicions indicades a dalt.
 
+
+## Project Hub
+
+Consulta [l’inventari, responsables i següents passos](PROJECT_HUB.md), la [safata d’entrada de converses](PROJECT_INBOX.md) i l’[estat estructurat](PROJECT_HUB_STATE.json).
