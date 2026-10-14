@@ -1,5 +1,9 @@
 # META_IDEAS_PBF
 
+## Missió principal
+
+[Clara — Motor d'Idees](CORE_MISSION.md): convertir les millors idees de Pol en validacions, actius, acords i ingressos.
+
 ALL MY IDEAS ARE FREE TO DEVELOP AND SHARE BUT NOT FOR SELL OR PROFIT WITHOUT CONSENT. JUST ASK ME FOR CONSENT (I'M NOT GREEDY) (A SMALL SHARE WOULD BE SATISFACTORY FOR ME)
 
 polbarreirofont@gmail.com ---- Ask anything! no wrong answers
