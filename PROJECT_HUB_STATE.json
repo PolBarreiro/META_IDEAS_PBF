@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-14T20:00:00+07:00",
+  "updated_at": "2026-10-14T22:00:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "idea-monetization-coordinator",
@@ -183,12 +183,12 @@
     {
       "id": "auto-photo-stories",
       "path": "auto-photo-stories/",
-      "priority": "unranked",
-      "lifecycle": "paused",
-      "status": "paused_pending_monetization_scoring",
+      "priority": "top_opportunity",
+      "lifecycle": "validation",
+      "status": "selected_for_low_cost_validation",
       "next_step": {
-        "action": "Score this preserved project against the canonical monetization criteria before any reactivation.",
-        "acceptance": "Evidence-backed score, realistic revenue path, IP risk and one low-cost validation step are recorded."
+        "action": "Prepare a private synthetic offline demo of select → propose → review → export, then test it with 3–5 consenting users.",
+        "acceptance": "At least 3 users complete without help; at least 2 would repeat weekly or pay; zero personal photos, network calls or automatic publishing."
       },
       "owner": {
         "role": "hub-coordinator"
@@ -222,6 +222,12 @@
           "ref": "auto-photo-stories/docs/ARCHITECTURE.md",
           "observed_at": "2026-10-14",
           "result": "local-first components, trust boundaries, data flow and failure modes defined"
+        },
+        {
+          "kind": "four_agent_rubric",
+          "ref": "OPPORTUNITY_RANKING.md",
+          "observed_at": "2026-10-14",
+          "result": "ranked_first_64_of_100"
         }
       ],
       "constraints": {
@@ -234,6 +240,14 @@
       "previous_next_step": {
         "action": "Create docs/AUTOMATION.md for assisted flows, deduplication, future scheduling and social connector activation gates.",
         "acceptance": "No automatic publish is active; success/failure state transitions and privacy boundaries are explicit."
+      },
+      "scoring": {
+        "total_100": 64,
+        "evidence_confidence_5": 4,
+        "business_5": 2.67,
+        "commercial_5": 3.75,
+        "feasibility_ip_5": 2.67,
+        "gate": "Declare a project license before publishing code; keep validation demo private."
       }
     },
     {
@@ -307,6 +321,8 @@
     "active_project": "idea-monetization-engine",
     "all_previous_projects": "preserved_and_paused_pending_scoring",
     "reactivation_rule": "Only when evidence-backed monetization scoring justifies it.",
-    "deletion_policy": "Do not delete prior work; archive and retain provenance."
+    "deletion_policy": "Do not delete prior work; archive and retain provenance.",
+    "current_validation_target": "auto-photo-stories",
+    "selection_basis": "Weighted four-agent rubric: evidence 20%, business 25%, commercial 25%, feasibility/IP 30%."
   }
 }
