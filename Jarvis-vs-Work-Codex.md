@@ -69,3 +69,9 @@ Aplicació: avançar sense preguntes rutinàries, reutilitzar una base existent,
 - Preparats script d'auditoria/instal·lació/verificació i guia Windows 11 en una branca revisable.
 - Verificades les dependències upstream, Python 3.11–3.13, llicència CC BY-NC 4.0 i emmagatzematge local de la clau Gemini.
 - Bloqueig concret: manca accés al PC Windows 11 de Pol; no s'ha executat ni validat cap instal·lació.
+
+
+## Requisit: resum diari Gmail → WhatsApp
+Cal revisar diàriament els missatges nous importants de Gmail i enviar un únic resum breu al grup de WhatsApp `Clara GPT`; si no n'hi ha, enviar només `Gmail revisat`. El flux no pot respondre ni modificar correus, repetir missatges, publicar estat privat ni anunciar èxit si alguna consulta o enviament falla.
+
+Disseny i condicions d'activació: `docs/jarvis/GMAIL_WHATSAPP.md`. Estat: **desactivat** fins que al PC es verifiquin OAuth Gmail de només lectura, el controlador segur de WhatsApp i la identitat exacta del grup.
