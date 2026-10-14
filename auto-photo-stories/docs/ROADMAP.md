@@ -16,7 +16,7 @@ Una sola unitat petita i revisable per execució. Sense desenvolupament sostingu
 ## Fase 1 — Producte i arquitectura
 
 - [x] `docs/PRODUCT.md`: MVP assistit, selecció consentida, proposta narrativa i revisió.
-- [ ] `docs/ARCHITECTURE.md`: components i flux de dades.
+- [x] `docs/ARCHITECTURE.md`: components, fronteres de confiança i flux de dades local-first.
 - [ ] `docs/AUTOMATION.md`: selecció, esborrany, programació i notificacions.
 - [ ] `docs/SECURITY_PRIVACY.md`: permisos, credencials, fotos i retenció.
 - [ ] `docs/DECISIONS.md`: registre curt de decisions.
@@ -44,6 +44,10 @@ Només després de validar comptes i permisos:
 
 Definit l'MVP local-first: selecció explícita, proposta narrativa explicable, revisió humana i exportació manual. Publicació automàtica, reconeixement de persones i accés complet a Google Fotos queden fora d'abast inicial.
 
+## Progrés — 14-10-2026, 19:00 Asia/Bangkok
+
+Arquitectura local-first definida: selector oficial, anàlisi i composició locals, revisió humana, exportació i compartició manual. El connector Instagram queda separat i desactivat.
+
 ## Següent pas únic
 
-Crear `docs/ARCHITECTURE.md` amb components locals, límits de confiança i flux de dades del MVP.
+Crear `docs/AUTOMATION.md` amb fluxos assistits, programació futura, deduplicació i condicions d'activació del connector social.
