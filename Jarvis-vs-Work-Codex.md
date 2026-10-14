@@ -16,7 +16,7 @@ El nostre projecte es diu **Jarvis**. La decisió vigent és instal·lar l’ass
 
 Referència general aportada per Pol: **“I build Jarvis in real life”**. És una frase recordada i una inspiració del projecte, no un títol exacte verificat ni una atribució d’autoria. Vídeo de referència: https://youtu.be/Acw0NtkyNtM.
 
-FatihMakes / Mark LV és la base local escollida: https://github.com/FatihMakes/Mark-LV. Agent Zero continua com a alternativa/complement: https://github.com/agent0ai/agent-zero. Mark LV està instal·lat i obert; encara falta verificar conversa Gemini, persistència i accions reals.
+FatihMakes / Mark LV és la base local escollida: https://github.com/FatihMakes/Mark-LV. Agent Zero continua com a alternativa/complement: https://github.com/agent0ai/agent-zero. Mark LV està instal·lat i obert; encara falta verificar la conversa Gemini. OpenClaw 2026.8.35 ja té connector Codex oficial, gateway saludable i una inferència real `OPENCLAW_READY` sense fallback; això verifica la ruta del model, no encara una tasca autònoma amb eines.
 
 ## Comparativa: Work + Codex versus Jarvis propi
 Data: 14 d’octubre de 2026. Nota de decisió de Pol; revisió documental, sense proves d’execució.
@@ -46,10 +46,10 @@ Usar **Mark LV com a base inicial local** per veu, pantalla i control natiu de W
 S'ha preparat una instal·lació reproduïble a `scripts/jarvis/Prepare-Jarvis.ps1` i la guia `docs/jarvis/WINDOWS_INSTALL.md`. Mark LV està instal·lat sota `%USERPROFILE%\.local\share\jarvis\Mark-LV` i la interfície s'ha obert. Això acredita els estats **instal·lat** i **obert**, no encara **verificat** ni **operatiu**.
 
 ## Pendents
-1. Verificar selecció de models segons dificultat, proveïdors compatibles i costos.
-2. Comparar una mateixa tasca real: recerca, modificació de codi, execució i verificació.
-3. Comprovar persistència, recuperació d’errors i funcionament amb el portàtil apagat.
-4. Executar el desplegament autoritzat quan hi hagi recursos i accessos reals; no contractar serveis ni assumir despeses sense pressupost.
+1. Completar una tasca local petita i reversible amb eines; publicar-ne només l'evidència sanejada al [fil #3](https://github.com/PolBarreiro/META_IDEAS_PBF/issues/3).
+2. Verificar la conversa Gemini de Mark LV de manera separada.
+3. Comprovar persistència i recuperació després de reinici o reconnexió.
+4. Comparar una mateixa tasca real entre components sense contractar serveis ni assumir despeses.
 
 ## Fonts primàries consultades
 - Work: https://learn.chatgpt.com/docs/get-started-with-work
@@ -69,8 +69,10 @@ Aplicació: avançar sense preguntes rutinàries, reutilitzar una base existent,
 - Preparats script d'auditoria/instal·lació/verificació i guia Windows 11 en una branca revisable.
 - Verificades les dependències upstream, Python 3.11–3.13, llicència CC BY-NC 4.0 i emmagatzematge local de la clau Gemini.
 - Mark LV: instal·lat i interfície oberta; conversa Gemini pendent.
-- OpenClaw 2026.8.35 (`pc-autonomia-stable`): OAuth OpenAI disponible; plugin Codex, gateway i inferència pendents.
-- Distinció vigent: el coordinador cloud no controla directament el PC; l’executor local aporta proves.
+- OpenClaw 2026.8.35: connector Codex oficial habilitat, gateway saludable, inici amb la sessió Windows i inferència `OPENCLAW_READY` verificada sense fallback.
+- La prova autònoma amb eines continua en curs; no es considera superada fins que el [fil #3](https://github.com/PolBarreiro/META_IDEAS_PBF/issues/3) aporti evidència nova.
+- El heartbeat local existent de 30 minuts és un executor subordinat; Jarvis manté l'única coordinació amb ritme horari.
+- Distinció vigent: el coordinador cloud no controla directament el PC; l’executor local aporta proves. L'aturada de GUI amb Escape es respecta i no es pot esquivar.
 
 
 ## Requisit: resum diari Gmail → WhatsApp
