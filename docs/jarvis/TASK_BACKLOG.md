@@ -34,6 +34,15 @@ JARVIS ordenarà aquestes tasques quan estigui instal·lat i verificat. Cap tasc
 - **Sortida:** comparativa curta amb millor opció i preu total.
 - **Notificació:** WhatsApp només després de verificar la connexió i el grup.
 
+### P-004 — Wearable d'IA i captura 360° lleugera
+
+- **Prioritat:** alta.
+- **Estat:** primera arquitectura estudiada; compra pendent.
+- **Objectiu:** accés còmode i econòmic a ChatGPT/JARVIS amb elecció de proveïdor, més un hyperlapse 360° de tot el dia.
+- **Decisió preliminar:** separar veu (mòbil + wearable) i càmera 360°.
+- **Document:** `docs/jarvis/WEARABLE_360.md`.
+- **Límit:** no comprar ni activar gravació de tercers sense revisió de privacitat i aprovació de Pol.
+
 ## Següent pas
 
-Instal·lar i verificar JARVIS al PC. Després, resoldre P-001; P-002 i P-003 es prioritzaran automàticament segons cost, risc, dependències i utilitat.
+Instal·lar i verificar JARVIS al PC. Després, resoldre P-001; P-002, P-003 i P-004 es prioritzaran automàticament segons cost, risc, dependències i utilitat.
