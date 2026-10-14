@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-14T22:00:00+07:00",
+  "updated_at": "2026-10-14T23:00:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "idea-monetization-coordinator",
@@ -185,10 +185,10 @@
       "path": "auto-photo-stories/",
       "priority": "top_opportunity",
       "lifecycle": "validation",
-      "status": "selected_for_low_cost_validation",
+      "status": "private_synthetic_demo_deployed_pending_user_validation",
       "next_step": {
-        "action": "Prepare a private synthetic offline demo of select → propose → review → export, then test it with 3–5 consenting users.",
-        "acceptance": "At least 3 users complete without help; at least 2 would repeat weekly or pay; zero personal photos, network calls or automatic publishing."
+        "action": "Run the private synthetic demo with 3–5 consenting users; collect only anonymous completion, ease and repeat/pay intent.",
+        "acceptance": "At least 3 complete without help, median ease >=4/5, at least 2 would repeat or pay, and no personal data or false publication state."
       },
       "owner": {
         "role": "hub-coordinator"
@@ -228,6 +228,12 @@
           "ref": "OPPORTUNITY_RANKING.md",
           "observed_at": "2026-10-14",
           "result": "ranked_first_64_of_100"
+        },
+        {
+          "kind": "private_demo",
+          "ref": "Clara private Site / autophoto.html",
+          "observed_at": "2026-10-14",
+          "result": "select_propose_review_export_flow_deployed_with_synthetic_assets_only"
         }
       ],
       "constraints": {
