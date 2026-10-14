@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-14T14:15:00+07:00",
+  "updated_at": "2026-10-14T15:00:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "hub-coordinator",
@@ -118,21 +118,28 @@
       "id": "auto-photo-stories",
       "path": "auto-photo-stories/",
       "priority": "medium",
-      "lifecycle": "idea",
-      "status": "not_onboarded_source_absent",
+      "lifecycle": "prepared",
+      "status": "onboarded_documentation_only",
       "next_step": {
-        "action": "Locate the authoritative source before creating structure.",
-        "acceptance": "Existing source is identified or absence is confirmed."
+        "action": "Create docs/FEASIBILITY.md from official Google Photos, Instagram and Android sources.",
+        "acceptance": "Matrix records capability, permission, limit, cost and manual fallback; no paid calls or deployments."
       },
       "owner": {
         "role": "hub-coordinator"
       },
       "blockers": [
-        "Expected repository path is absent"
+        "Platform capability and permission limits not yet verified"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "repository_path",
+          "ref": "auto-photo-stories/README.md and docs/ROADMAP.md",
+          "observed_at": "2026-10-14",
+          "result": "created_after_source_search_found_no_existing_repository"
+        }
+      ],
       "constraints": {
-        "license_scope": "undetermined",
+        "license_scope": "undetermined; documentation only",
         "budget": "no paid services",
         "privacy": "no photo content in repository"
       }
