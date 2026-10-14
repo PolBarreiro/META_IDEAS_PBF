@@ -1,12 +1,17 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated_local_date": "2026-10-14",
   "active_coordinator": "Jarvis",
   "priorities": [
     {
       "project": "Jarvis",
-      "status": "blocked_waiting_for_pc_access",
-      "next_step": "Run Audit, Install and Verify on Pol's Windows 11 PC; then verify WhatsApp group before enabling Gmail summary."
+      "status": "mark_lv_installed_ui_open_functionality_unverified",
+      "next_step": "Verify one OpenClaw inference and one Gemini conversation, then test a reversible local action.",
+      "evidence": [
+        "PROJECT_HUB.md",
+        "Jarvis-vs-Work-Codex.md",
+        "docs/jarvis/WINDOWS_INSTALL.md"
+      ]
     },
     {
       "project": "AutoPhoto Stories",
@@ -47,5 +52,21 @@
       "priority": "high",
       "status": "research_brief_completed_purchase_comparison_pending"
     }
-  ]
+  ],
+  "execution_agents": {
+    "cloud_coordinator": {
+      "status": "active",
+      "scope": "project inventory, priorities, GitHub and connected cloud tools"
+    },
+    "local_executor": {
+      "runtime": "OpenClaw 2026.8.35",
+      "profile": "pc-autonomia-stable",
+      "status": "oauth_available_codex_plugin_gateway_and_inference_pending"
+    }
+  },
+  "conversation_inbox": {
+    "last_processed_at": "2026-10-14T14:15:00+07:00",
+    "scope": "visible_context_only",
+    "document": "PROJECT_INBOX.md"
+  }
 }
