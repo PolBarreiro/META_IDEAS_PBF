@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-15T02:04:00+07:00",
+  "updated_at": "2026-10-15T02:56:00+07:00",
   "canonical": true,
   "coordinator": {
     "role": "idea-monetization-coordinator",
@@ -39,6 +39,12 @@
           "ref": "Clara — Motor d’Idees",
           "observed_at": "2026-10-14",
           "result": "single active mother task rewritten around idea monetization"
+        },
+        {
+          "kind": "four_agent_review",
+          "ref": "inventory + research/IP + business + commercial",
+          "observed_at": "2026-10-15",
+          "result": "AutoPhoto validation cohort, anonymous metrics, outreach draft and IP release gate prepared; no outreach sent"
         }
       ],
       "constraints": {
@@ -185,10 +191,10 @@
       "path": "auto-photo-stories/",
       "priority": "top_opportunity",
       "lifecycle": "validation",
-      "status": "private_synthetic_demo_deployed_pending_user_validation",
+      "status": "validation_package_ready_pending_authorized_testers",
       "next_step": {
-        "action": "Run the private synthetic demo with 3–5 consenting users; collect only anonymous completion, ease and repeat/pay intent.",
-        "acceptance": "At least 3 complete without help, median ease >=4/5, at least 2 would repeat or pay, and no personal data or false publication state."
+        "action": "After explicit outreach authorization or user-supplied consenting testers, run the private synthetic demo with 4 qualified testers (3–5 acceptable).",
+        "acceptance": "At least 3 complete without help; all successful exports pass integrity; median ease and usefulness >=4/5; at least 2 repeat/pay signals; zero publication confusion or safety breach."
       },
       "owner": {
         "role": "hub-coordinator"
@@ -240,10 +246,22 @@
           "ref": "private synthetic demo source self-test",
           "observed_at": "2026-10-15",
           "result": "15_checks_passed; 8_unique_synthetic_assets; deterministic_7_item_story; exported_state; published_false; no_client_network_apis; purge_and_download_cleanup_present"
+        },
+        {
+          "kind": "validation_kit",
+          "ref": "auto-photo-stories/docs/VALIDATION_KIT.md",
+          "observed_at": "2026-10-15",
+          "result": "qualified cohort, consent script, anonymous schema and GO/ITERATE/STOP rules prepared; not sent"
+        },
+        {
+          "kind": "ip_release_gate",
+          "ref": "auto-photo-stories/docs/IP_RELEASE_GATE.md",
+          "observed_at": "2026-10-15",
+          "result": "public code release blocked until authorship, asset provenance, dependency, licence, secret/privacy and rights-holder gates pass"
         }
       ],
       "constraints": {
-        "license_scope": "undetermined; documentation only",
+        "license_scope": "NO-GO for public code release; keep code/assets private and proprietary until IP_RELEASE_GATE.md passes",
         "budget": "no paid services",
         "privacy": "no photo content in repository"
       },
@@ -311,7 +329,7 @@
     }
   ],
   "conversation_inbox": {
-    "last_processed_at": "2026-10-14T14:15:00+07:00",
+    "last_processed_at": "2026-10-15T02:56:00+07:00",
     "scope": "visible_context_only",
     "document": "PROJECT_INBOX.md"
   },
