@@ -1,0 +1,537 @@
+{
+  "schema_version": 4,
+  "updated_at": "2026-10-15T06:58:00+07:00",
+  "canonical": true,
+  "coordinator": {
+    "role": "idea-monetization-coordinator",
+    "automation": "Clara — Motor d’Idees",
+    "status": "active_hourly_single_coordinator",
+    "canonical_mission": "CORE_MISSION.md"
+  },
+  "projects": [
+    {
+      "id": "idea-monetization-engine",
+      "path": "CORE_MISSION.md",
+      "priority": "maximum",
+      "lifecycle": "active",
+      "status": "canonical_mission_active",
+      "next_step": {
+        "action": "Build a private, deduplicated inventory from accessible conversation sources and rank the first three opportunities.",
+        "acceptance": "Each opportunity has evidence, revenue path, IP/privacy risk, owner and one low-cost validation step."
+      },
+      "owner": {
+        "role": "Clara",
+        "agents": [
+          "inventory",
+          "research-ip",
+          "business",
+          "commercial"
+        ]
+      },
+      "blockers": [
+        "Complete ChatGPT history is not directly accessible in every run",
+        "Gemini, Grok and Claude ingestion requires a verified connector or authorized export",
+        "Subagent capacity may be temporarily unavailable"
+      ],
+      "evidence": [
+        {
+          "kind": "automation_update",
+          "ref": "Clara — Motor d’Idees",
+          "observed_at": "2026-10-14",
+          "result": "single active mother task rewritten around idea monetization"
+        },
+        {
+          "kind": "four_agent_review",
+          "ref": "inventory + research/IP + business + commercial",
+          "observed_at": "2026-10-15",
+          "result": "AutoPhoto validation cohort, anonymous metrics, outreach draft and IP release gate prepared; no outreach sent"
+        }
+      ],
+      "constraints": {
+        "privacy": "conversation corpus and personal data remain private",
+        "budget": "no purchases or paid services without explicit authorization",
+        "ip": "do not publish enabling details before protection review",
+        "outreach": "prepare freely; send or commit only with explicit applicable authorization"
+      }
+    },
+    {
+      "id": "jarvis",
+      "path": "Jarvis-vs-Work-Codex.md",
+      "priority": "unranked",
+      "lifecycle": "paused",
+      "status": "paused_pending_monetization_scoring",
+      "next_step": {
+        "action": "Score this preserved project against the canonical monetization criteria before any reactivation.",
+        "acceptance": "Evidence-backed score, realistic revenue path, IP risk and one low-cost validation step are recorded."
+      },
+      "owner": {
+        "role": "local-pc-executor",
+        "oversight": "hub-coordinator"
+      },
+      "blockers": [
+        "Autonomous task with tools has not yet produced evidence",
+        "Mark LV AI conversation remains unverified",
+        "Persistent WhatsApp agent link remains unverified"
+      ],
+      "evidence": [
+        {
+          "kind": "local_observation",
+          "ref": "Mark LV installation and UI",
+          "observed_at": "2026-10-14",
+          "result": "installed_and_open"
+        },
+        {
+          "kind": "pull_request",
+          "ref": "#1",
+          "observed_at": "2026-10-14",
+          "result": "open"
+        },
+        {
+          "kind": "executor_bridge",
+          "ref": "#3",
+          "observed_at": "2026-10-14",
+          "result": "OpenClaw_2026.8.35_official_Codex_connector_gateway_health_startup_and_OPENCLAW_READY_inference_verified_no_fallback"
+        }
+      ],
+      "constraints": {
+        "license_scope": "Mark LV dependency: CC BY-NC 4.0; repository root license does not replace dependency terms",
+        "budget": "no purchases or paid services",
+        "privacy": "private runtime state remains local",
+        "gui_control": "paused_by_user_escape; do not resume or bypass without a new local resume action"
+      },
+      "previous_lifecycle": "open",
+      "previous_status": "openclaw_gateway_inference_verified_autonomous_tool_task_pending",
+      "previous_next_step": {
+        "action": "Complete one small reversible local task with tools and publish sanitized evidence to issue #3; verify Mark LV AI conversation separately.",
+        "acceptance": "Issue #3 records job ID, test, result, real limitation and next step; no private data. OPENCLAW_READY alone is not autonomous-tool evidence."
+      }
+    },
+    {
+      "id": "gmail-whatsapp-summary",
+      "path": "docs/jarvis/GMAIL_WHATSAPP.md",
+      "priority": "unranked",
+      "lifecycle": "paused",
+      "status": "paused_pending_monetization_scoring",
+      "next_step": {
+        "action": "Score this preserved project against the canonical monetization criteria before any reactivation.",
+        "acceptance": "Evidence-backed score, realistic revenue path, IP risk and one low-cost validation step are recorded."
+      },
+      "owner": {
+        "role": "local-pc-executor",
+        "oversight": "hub-coordinator"
+      },
+      "blockers": [
+        "Persistent WhatsApp agent link not verified",
+        "Local Gmail adapter not verified"
+      ],
+      "evidence": [
+        {
+          "kind": "connector_check",
+          "ref": "Gmail read-only",
+          "observed_at": "2026-10-14",
+          "result": "success"
+        },
+        {
+          "kind": "local_observation",
+          "ref": "manual desktop send",
+          "observed_at": "2026-10-14",
+          "result": "success_but_no_agent_round_trip"
+        }
+      ],
+      "constraints": {
+        "license_scope": "project code license to be declared before implementation",
+        "budget": "no purchases or paid services",
+        "privacy": "email content, recipient identifiers and checkpoints remain local"
+      },
+      "previous_lifecycle": "prepared",
+      "previous_status": "cloud_read_verified_persistent_local_transport_unverified",
+      "previous_next_step": {
+        "action": "Verify persistent agent pairing plus send, receive and push before enabling.",
+        "acceptance": "Round-trip evidence from the local agent; no repository identifiers or message content."
+      }
+    },
+    {
+      "id": "quest-generative",
+      "path": "quest-generative/",
+      "priority": "unranked",
+      "lifecycle": "paused",
+      "status": "paused_pending_monetization_scoring",
+      "next_step": {
+        "action": "Score this preserved project against the canonical monetization criteria before any reactivation.",
+        "acceptance": "Evidence-backed score, realistic revenue path, IP risk and one low-cost validation step are recorded."
+      },
+      "owner": {
+        "role": "hub-coordinator"
+      },
+      "blockers": [
+        "Shared consumption percentage cannot be independently enforced"
+      ],
+      "evidence": [
+        {
+          "kind": "repository_path",
+          "ref": "quest-generative/README.md",
+          "observed_at": "2026-10-14",
+          "result": "present"
+        }
+      ],
+      "constraints": {
+        "license_scope": "MIT within quest-generative/",
+        "budget": "small free steps only",
+        "privacy": "public documentation only"
+      },
+      "previous_lifecycle": "investigated",
+      "previous_status": "existing_base_small_steps_only",
+      "previous_next_step": {
+        "action": "Perform one bounded inspection or reviewable change.",
+        "acceptance": "No sustained development without a reliable quota meter."
+      }
+    },
+    {
+      "id": "auto-photo-stories",
+      "path": "auto-photo-stories/",
+      "priority": "top_opportunity",
+      "lifecycle": "validation",
+      "status": "validation_package_ready_pending_authorized_testers",
+      "next_step": {
+        "action": "After explicit outreach authorization or user-supplied consenting testers, run the private synthetic demo with 4 qualified testers (3–5 acceptable).",
+        "acceptance": "At least 3 complete without help; all successful exports pass integrity; median ease and usefulness >=4/5; at least 2 repeat/pay signals; zero publication confusion or safety breach."
+      },
+      "owner": {
+        "role": "hub-coordinator"
+      },
+      "blockers": [
+        "Google Photos APIs do not provide autonomous access to the user's full library",
+        "Instagram account type and publishing permissions are not verified",
+        "Memories, collages and animations have no general documented retrieval API"
+      ],
+      "evidence": [
+        {
+          "kind": "repository_path",
+          "ref": "auto-photo-stories/README.md and docs/ROADMAP.md",
+          "observed_at": "2026-10-14",
+          "result": "created_after_source_search_found_no_existing_repository"
+        },
+        {
+          "kind": "official_documentation_review",
+          "ref": "auto-photo-stories/docs/FEASIBILITY.md",
+          "observed_at": "2026-10-14",
+          "result": "assisted flow feasible; full autonomous Google Photos selection not supported by documented APIs"
+        },
+        {
+          "kind": "product_definition",
+          "ref": "auto-photo-stories/docs/PRODUCT.md",
+          "observed_at": "2026-10-14",
+          "result": "assisted local-first MVP with explicit selection, human review and manual export"
+        },
+        {
+          "kind": "architecture",
+          "ref": "auto-photo-stories/docs/ARCHITECTURE.md",
+          "observed_at": "2026-10-14",
+          "result": "local-first components, trust boundaries, data flow and failure modes defined"
+        },
+        {
+          "kind": "four_agent_rubric",
+          "ref": "OPPORTUNITY_RANKING.md",
+          "observed_at": "2026-10-14",
+          "result": "ranked_first_64_of_100"
+        },
+        {
+          "kind": "private_demo",
+          "ref": "Clara private Site / autophoto.html",
+          "observed_at": "2026-10-14",
+          "result": "select_propose_review_export_flow_deployed_with_synthetic_assets_only"
+        },
+        {
+          "kind": "deterministic_technical_preflight",
+          "ref": "private synthetic demo source self-test",
+          "observed_at": "2026-10-15",
+          "result": "15_checks_passed; 8_unique_synthetic_assets; deterministic_7_item_story; exported_state; published_false; no_client_network_apis; purge_and_download_cleanup_present"
+        },
+        {
+          "kind": "validation_kit",
+          "ref": "auto-photo-stories/docs/VALIDATION_KIT.md",
+          "observed_at": "2026-10-15",
+          "result": "qualified cohort, consent script, anonymous schema and GO/ITERATE/STOP rules prepared; not sent"
+        },
+        {
+          "kind": "ip_release_gate",
+          "ref": "auto-photo-stories/docs/IP_RELEASE_GATE.md",
+          "observed_at": "2026-10-15",
+          "result": "public code release blocked until authorship, asset provenance, dependency, licence, secret/privacy and rights-holder gates pass"
+        }
+      ],
+      "constraints": {
+        "license_scope": "NO-GO for public code release; keep code/assets private and proprietary until IP_RELEASE_GATE.md passes",
+        "budget": "no paid services",
+        "privacy": "no photo content in repository"
+      },
+      "previous_lifecycle": "prepared",
+      "previous_status": "local_first_architecture_defined",
+      "previous_next_step": {
+        "action": "Create docs/AUTOMATION.md for assisted flows, deduplication, future scheduling and social connector activation gates.",
+        "acceptance": "No automatic publish is active; success/failure state transitions and privacy boundaries are explicit."
+      },
+      "scoring": {
+        "total_100": 64,
+        "evidence_confidence_5": 4,
+        "business_5": 2.67,
+        "commercial_5": 3.75,
+        "feasibility_ip_5": 2.67,
+        "gate": "Declare a project license before publishing code; keep validation demo private."
+      }
+    },
+    {
+      "id": "pose-independent-cloud-vr",
+      "path": "https://github.com/PolBarreiro/pose-independent-cloud-vr",
+      "priority": "unranked",
+      "lifecycle": "paused",
+      "status": "paused_pending_monetization_scoring",
+      "next_step": {
+        "action": "Score this preserved project against the canonical monetization criteria before any reactivation.",
+        "acceptance": "Evidence-backed score, realistic revenue path, IP risk and one low-cost validation step are recorded."
+      },
+      "owner": {
+        "role": "existing-xcloudvr-executor",
+        "oversight": "hub-coordinator"
+      },
+      "blockers": [
+        "No server transport implemented",
+        "No renderer or headset path implemented",
+        "No hardware or comfort measurements"
+      ],
+      "evidence": [
+        {
+          "kind": "pull_request",
+          "ref": "PolBarreiro/pose-independent-cloud-vr#2",
+          "observed_at": "2026-10-14",
+          "result": "open; snapshot validation and reconnect recovery; 7 Node tests reported passed"
+        },
+        {
+          "kind": "branch_compare",
+          "ref": "prototype/snapshot-validation",
+          "observed_at": "2026-10-14",
+          "result": "one commit ahead; three prototype files; documentation unchanged"
+        }
+      ],
+      "constraints": {
+        "license_scope": "prototype/ code MIT; README and docs CC BY-NC-ND 4.0",
+        "budget": "no paid GPU or services",
+        "privacy": "public technical evidence only",
+        "communications": "do not repeat NVIDIA outreach without a new development",
+        "release": "do not promise releases or playable status"
+      },
+      "previous_lifecycle": "prototype",
+      "previous_status": "snapshot_receiver_pr_open_tests_7_passed",
+      "previous_next_step": {
+        "action": "Add a deterministic in-memory transport/scene simulation around SnapshotReceiver, without renderer, headset or paid infrastructure.",
+        "acceptance": "A moving-object sequence survives drop, stale packet and reconnect in automated tests; results state exactly what remains unverified."
+      }
+    },
+    {
+      "id": "quest-link-compatibility",
+      "path": "docs/quest-link/VALIDATION.md",
+      "priority": "rank_4",
+      "lifecycle": "inspection",
+      "status": "synthetic_gap_matrix_complete_user_evidence_pending",
+      "next_step": {
+        "action": "After explicit outreach authorization, test the static explainable report with 5 consenting PCVR users; do not write diagnostic code yet.",
+        "acceptance": "At least 3 have an unresolved question after the official Meta flow, the report adds a distinct actionable explanation, and at least 2 show payment or avoided-support/purchase value."
+      },
+      "owner": {
+        "role": "hub-coordinator",
+        "agents": [
+          "inventory",
+          "research-ip",
+          "business",
+          "commercial"
+        ]
+      },
+      "blockers": [
+        "Meta Horizon Link already provides a USB speed test and compatibility feedback",
+        "No demand, willingness-to-pay or accuracy evidence",
+        "Compatibility data would require continuous maintenance"
+      ],
+      "evidence": [
+        {
+          "kind": "source_document",
+          "ref": "Automated Compatibility Checker for Meta Quest Link",
+          "observed_at": "2026-10-15",
+          "result": "concept_only_no_code_or_tests"
+        },
+        {
+          "kind": "four_agent_rubric",
+          "ref": "OPPORTUNITY_RANKING.md",
+          "observed_at": "2026-10-15",
+          "result": "ranked_4th_51_of_100"
+        },
+        {
+          "kind": "official_documentation_review",
+          "ref": "Meta Horizon Link developer documentation",
+          "observed_at": "2026-10-15",
+          "result": "built_in_USB_speed_test_and_compatibility_feedback_confirmed; generic_checker_would_duplicate_existing_features"
+        },
+        {
+          "kind": "synthetic_gap_matrix",
+          "ref": "docs/quest-link/SYNTHETIC_CASES.md",
+          "observed_at": "2026-10-15",
+          "result": "10_cases_reviewed; 1_duplicate_removed; 1_mostly_officially_covered; 8_candidate_explanatory_gaps; only_2_have_strong_documentary_support; no_code_authorized"
+        }
+      ],
+      "constraints": {
+        "license_scope": "original implementation requires a commercially suitable licence; repository idea text is not a commercial software licence",
+        "budget": "no purchases or paid services",
+        "privacy": "read-only local inspection; no telemetry, account login or device identifiers",
+        "outreach": "none without explicit authorization"
+      },
+      "scoring": {
+        "total_100": 51,
+        "evidence_confidence_5": 2.5,
+        "business_5": 3.4,
+        "commercial_5": 2.75,
+        "feasibility_ip_5": 1.75,
+        "gate": "Prove an explainable diagnostic gap beyond Meta Horizon Link before writing code."
+      }
+    },
+    {
+      "id": "integrated-self-lighting-tobacco",
+      "path": "docs/triage/SELF_LIGHTING_TOBACCO.md",
+      "priority": "rank_6",
+      "lifecycle": "archived",
+      "status": "stop_after_prior_art_safety_regulatory_business_triage",
+      "next_step": {
+        "action": "No action. Revisit only with a distinct non-obvious safety architecture plus professional IP, regulatory, transport and insurability evidence.",
+        "acceptance": "All five revisit gates in the triage document pass before any prototype or outreach."
+      },
+      "owner": {
+        "role": "hub-coordinator",
+        "agents": [
+          "inventory",
+          "research-ip",
+          "business",
+          "commercial"
+        ]
+      },
+      "blockers": [
+        "Dense published prior art covering multiple self-lighting approaches",
+        "Severe fire, burn, transport, toxicology and product-liability exposure",
+        "EU reduced-ignition-propensity and tobacco-product requirements",
+        "No demand, prototype or defensible architecture"
+      ],
+      "evidence": [
+        {
+          "kind": "four_agent_rubric",
+          "ref": "docs/triage/SELF_LIGHTING_TOBACCO.md",
+          "observed_at": "2026-10-15",
+          "result": "ranked_6th_24_of_100_STOP_archive"
+        },
+        {
+          "kind": "patent_review",
+          "ref": "public patent records including US3994305A, US8215317B2 and WO2012123679A1",
+          "observed_at": "2026-10-15",
+          "result": "generic_concept_not_novel; freedom_to_operate_unresolved"
+        },
+        {
+          "kind": "regulatory_review",
+          "ref": "EU 2008/264/EC and tobacco product regulation",
+          "observed_at": "2026-10-15",
+          "result": "reduced_ignition_propensity_and_product_reporting_requirements_create_strong_adverse_gate"
+        }
+      ],
+      "constraints": {
+        "safety": "No chemistry, reactive materials, ignition tests or physical prototype",
+        "ip": "Do not publish enabling detail; broad novelty appears absent",
+        "budget": "No purchase, laboratory work or paid filing",
+        "outreach": "No manufacturer, consumer or investor contact"
+      },
+      "scoring": {
+        "total_100": 24,
+        "evidence_confidence_5": 4,
+        "business_5": 0.5,
+        "commercial_5": 0.5,
+        "feasibility_ip_5": 0.5,
+        "gate": "Archived; professional IP/regulatory/safety evidence required to reopen."
+      }
+    },
+    {
+      "id": "xr-boundary-safety-cues",
+      "path": "docs/xr-boundary/FEASIBILITY.md",
+      "priority": "rank_5",
+      "lifecycle": "inspection",
+      "status": "official_overlap_confirmed_supplementary_cue_only",
+      "next_step": {
+        "action": "Create a static synthetic A/B/C storyboard comparing Meta default with two supplementary cues while the system boundary remains active.",
+        "acceptance": "Later, after explicit outreach authorization, at least 60% of consenting XR testers prefer a cue, notice it earlier, do not confuse it with a safety replacement, and report no added discomfort."
+      },
+      "owner": {
+        "role": "hub-coordinator",
+        "agents": [
+          "inventory",
+          "research-ip",
+          "business",
+          "commercial"
+        ]
+      },
+      "blockers": [
+        "Meta already provides a system wall/floor grid and automatic passthrough near the boundary",
+        "Legacy exact Guardian intersection and visibility functions are deprecated or non-functional on current OpenXR",
+        "No user evidence for earlier notice, comfort or willingness to pay"
+      ],
+      "evidence": [
+        {
+          "kind": "official_documentation_review",
+          "ref": "Meta Boundary, Passthrough and boundaryless safety documentation; OpenXR boundary visibility and bounds APIs",
+          "observed_at": "2026-10-15",
+          "result": "system overlap and API limits confirmed; replacement boundary rejected"
+        },
+        {
+          "kind": "four_role_rubric",
+          "ref": "OPPORTUNITY_RANKING.md",
+          "observed_at": "2026-10-15",
+          "result": "ranked_5th_46_of_100"
+        }
+      ],
+      "constraints": {
+        "budget": "no purchases or paid services",
+        "safety": "system boundary stays active; no safety claim or reliance",
+        "comfort": "no automatic view rotation",
+        "privacy": "no raw camera imagery; synthetic validation assets only",
+        "outreach": "no tester contact without explicit applicable authorization"
+      },
+      "scoring": {
+        "total_100": 46,
+        "evidence_confidence_5": 3.5,
+        "business_5": 2.5,
+        "commercial_5": 1.25,
+        "feasibility_ip_5": 2.25,
+        "gate": "Validate only a supplementary cue; stop if it creates safety reliance, confusion or discomfort."
+      }
+    }
+  ],
+  "conversation_inbox": {
+    "last_processed_at": "2026-10-15T06:01:00+07:00",
+    "scope": "visible_context_only",
+    "document": "PROJECT_INBOX.md"
+  },
+  "private_obligations": {
+    "location": "automation/private state",
+    "published_here": false
+  },
+  "executor_bridge": {
+    "issue": "#3",
+    "url": "https://github.com/PolBarreiro/META_IDEAS_PBF/issues/3",
+    "last_checked_at": "2026-10-14T19:01:00+07:00",
+    "last_comment_count": 1,
+    "rule": "Only new sanitized technical evidence; local executor does not modify PR #1 in parallel.",
+    "last_coordinator_instruction": "JARVIS-LOCAL-001",
+    "awaiting_executor_evidence": false,
+    "status": "paused_by_core_mission_reprioritization"
+  },
+  "portfolio_policy": {
+    "active_project": "idea-monetization-engine",
+    "all_previous_projects": "preserved_and_paused_pending_scoring",
+    "reactivation_rule": "Only when evidence-backed monetization scoring justifies it.",
+    "deletion_policy": "Do not delete prior work; archive and retain provenance.",
+    "current_validation_target": "auto-photo-stories",
+    "selection_basis": "Weighted four-agent rubric: evidence 20%, business 25%, commercial 25%, feasibility/IP 30%."
+  }
+}

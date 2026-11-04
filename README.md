@@ -1,5 +1,9 @@
 # META_IDEAS_PBF
 
+## Missió principal
+
+[Clara — Motor d'Idees](CORE_MISSION.md): convertir les millors idees de Pol en validacions, actius, acords i ingressos.
+
 ALL MY IDEAS ARE FREE TO DEVELOP AND SHARE BUT NOT FOR SELL OR PROFIT WITHOUT CONSENT. JUST ASK ME FOR CONSENT (I'M NOT GREEDY) (A SMALL SHARE WOULD BE SATISFACTORY FOR ME)
 
 polbarreirofont@gmail.com ---- Ask anything! no wrong answers
@@ -11,3 +15,7 @@ polbarreirofont@gmail.com ---- Ask anything! no wrong answers
 
 Consulta [el README del joc](quest-generative/README.md) per a l'arquitectura, el pla i com col·laborar. El material nou de quest-generative/ té llicència MIT pròpia; les idees anteriors mantenen les condicions indicades a dalt.
 
+
+## Project Hub
+
+Consulta [l’inventari, responsables i següents passos](PROJECT_HUB.md), la [safata d’entrada de converses](PROJECT_INBOX.md) i l’[estat estructurat](PROJECT_HUB_STATE.json).
